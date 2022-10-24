@@ -36,7 +36,7 @@
       institution: Samsung Electronics, Hwaseong, South Korea
       year: Sep. 2017 - Dec. 2017 
       description:
-        - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).}
+        - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).
         - Improved anomaly image classification tasks via distributed multi-GPU training methods of Keras and Spark.
         - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
 
