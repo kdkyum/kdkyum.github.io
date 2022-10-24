@@ -6,7 +6,7 @@ subtitle: Postdoc @ <a href="https://ds.ibs.re.kr">IBS Data Science Group</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
     <p>B231, IBS Theory Building</p>
