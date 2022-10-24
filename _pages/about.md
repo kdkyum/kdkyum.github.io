@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Postdoc @ <a href="https://ds.ibs.re.kr">IBS Data Science Group</a>
 
 profile:
   align: right
