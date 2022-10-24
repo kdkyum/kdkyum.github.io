@@ -28,6 +28,10 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
+<div class="clearfix">
+  {{ content }}
+</div>
+
 <div class="publications">
 <h2>selected publications</h2>
 {%- for y in page.years %}
