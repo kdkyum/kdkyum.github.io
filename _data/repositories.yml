@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - kdkyum
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - kdkyum/neep
+  - kdkyum/RatchetDRL
+  - kdkyum/odd_neep
+  - kgspiano/Music
+  - qodudrud/CNEEP
