@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Dong-Kyum Kim
+title: about
 permalink: /
 subtitle: Postdoc @ <a href="https://ds.ibs.re.kr">IBS Data Science Group</a>
 
