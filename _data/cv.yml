@@ -15,8 +15,8 @@
       institution: Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea
       year: 2016 - 2022
       description:
-        - Advisor: Prof. Hawoong Jeong
-        - Dissertation: Nonequilibrium Statistical Physics Study using Deep Learning
+        - "Advisor: Prof." <a href="https://stat.kaist.ac.kr/~hjeong">Hawoong Jeong</a>
+        - "Dissertation: Nonequilibrium Statistical Physics Study using Deep Learning"
     - title: Bachelor of Science (BS) in Physics
       institution: Seoul National University (SNU), Seoul, South Korea
       year: 2011 - 2015
@@ -31,12 +31,12 @@
       year: 2022 - Current
       description:
         - Data Science Group, Center for Mathematical and Computational Sciences.
-        - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha<\a> (Chief Investigator).
+        - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha</a> (Chief Investigator).
     - title: Machine Learning Intern
       institution: Samsung Electronics, Hwaseong, South Korea
       year: Sep. 2017 - Dec. 2017 
       description:
-        - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim<\a> (Senior Data Scientist).}
+        - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).}
         - Improved anomaly image classification tasks via distributed multi-GPU training methods of Keras and Spark.
         - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
 
