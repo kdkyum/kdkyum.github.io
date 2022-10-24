@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>B231, IBS</p>
-    <p>55 Expo-ro, Yuseong-gu</p>
+    <p>B231, IBS Theory Building</p>
+    <p>Expo-ro 55, Yuseong-gu</p>
     <p>Daejeon, Korea, 34126</p>
 
 news: flase  # includes a list of news items
