@@ -23,7 +23,7 @@ I am a postdoctoral researcher at the Institute for Basic Science in South Korea
 
 I am passionate about using interdisciplinary approaches to gain a better understanding of how AI algorithms function and how we can improve their performance. To this end, I am currently exploring the use of neuroscience methods to gain insight into the behavior and performance of deep learning algorithms. I believe that this approach, known as brain-inspired AI, has the potential to lead to significant advances in the field of AI.
 
-For more information, check out my [publications](https://kdkyum.github.io/publications/) and [CV](https://kdkyum.github.io/assets/pdf/CV_DKK_2022Oct.pdf). I am always open to discussing my research and potential collaboration opportunities.
+For more information, check out my [publications](https://kdkyum.github.io/publications/) and [CV](https://kdkyum.github.io/assets/pdf/CV_DKK.pdf). I am always open to discussing my research and potential collaboration opportunities.
 
 <!-- I am a physicist passionate about AI and did my PhD in physics at KAIST, Korea. Under professor [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/)'s supervision, I worked on applications of ML in complex systems and statistical physics. My current research focus is understanding highly complex nonequilibrium systems, such as biological systems, active matter, and others in nature, through stochastic thermodynamics with ML-based approaches. -->
 
