@@ -27,13 +27,13 @@
   type: time_table
   contents:
     - title: Postdoctoral Researcher
-      institution: Institute for Basic Science (IBS), Daejeon, South Korea
+      institution: Institute for Basic Science (IBS)
       year: 2022 - Current
       description:
         - Data Science Group, Center for Mathematical and Computational Sciences.
         - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha</a> (Chief Investigator).
     - title: Machine Learning Intern
-      institution: Samsung Electronics, Hwaseong, South Korea
+      institution: Samsung Electronics
       year: Sep. 2017 - Dec. 2017 
       description:
         - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).
