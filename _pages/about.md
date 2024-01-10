@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   address: 
 
-news: flase  # includes a list of news items
+news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 years: [2024, 2023, 2022, 2021, 2020]
