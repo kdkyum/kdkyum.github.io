@@ -1,13 +1,3 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Dong-Kyum Kim
-    - name: Date of Birth
-      value: 31st May 1993
-    - name: Languages
-      value: Korean, English
-
 - title: Education
   type: time_table
   contents:
@@ -23,10 +13,10 @@
       description:
         - Major in Physics and Minor in Computer Science & Engineering.
 
-- title: Experience
+- title: Employment History
   type: time_table
   contents:
-    - title: Postdoctoral Researcher
+    - title: Senior Researcher
       institution: Institute for Basic Science (IBS)
       year: 2022 - Current
       description:
@@ -41,16 +31,12 @@
         - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
 
 
-- title: Academic Interests
-  type: nested_list
+- title: Research Interests
+  type: list
   contents:
-    - title: AI
-      items: 
-        - AI for Physics
-        - Brain-inspired AI
-        - Big Data Analysis by using AI
+    - Artificial Intelligence (AI), Deep Learning, Machine Learning, Interpretable AI, Mechanistic Interpretability, Large Language Models (LLMs), Data Science, AI for Physics, Statistical Physics, Nonequilibrium Physics, Neuroscience, Brain-Inspired AI, Learning \& Memory
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Running 🏃🏻, Coffee brewing ☕️, Whisky 🥃
+    - <u>Hobbies:</u> Running 🏃🏻, Coffee brewing ☕️, Whisky 🥃; <a href="https://www.instagram.com/kdkyum531/"><i class="fa-brands fa-instagram"></i><\a>
