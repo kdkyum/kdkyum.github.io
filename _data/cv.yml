@@ -16,6 +16,9 @@
 - title: Employment History
   type: time_table
   contents:
+    - title: Postdoc
+      institution: Max Planck Institute for Security and Privacy (MPI-SP)
+      year: 2024 - Current
     - title: Senior Researcher
       institution: Institute for Basic Science (IBS)
       year: 2022 - Current
@@ -24,12 +27,11 @@
         - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha</a> (Chief Investigator).
     - title: Machine Learning Intern
       institution: Samsung Electronics
-      year: Sep. 2017 - Dec. 2017 
+      year: Sep. 2017 - Dec. 2017
       description:
         - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).
         - Improved anomaly image classification tasks via distributed multi-GPU training methods of Keras and Spark.
         - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
-
 
 - title: Research Interests
   type: list

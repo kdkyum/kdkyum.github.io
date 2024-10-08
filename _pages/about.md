@@ -2,21 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoc @ <a href="https://ds.ibs.re.kr">IBS Data Science Group</a>
+subtitle: Postdoc @ <a href="https://www.mpi-sp.org">Max Planck Institute for Security and Privacy (MPI-SP)</a>
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  address: 
+  address:
 
-news: false  # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 years: [2024, 2023, 2022, 2021, 2020]
 ---
 
-I am a postdoctoral researcher at the Institute for Basic Science (IBS). I completed my Ph.D. in Physics at KAIST, where I focused on AI applications in nonequilibrium physics. My research interests lie at the intersection of AI, complex systems, and nonequilibrium physics, with a particular focus on deep learning approaches.
+I am a postdoctoral researcher at the Max Planck Institute for Security and Privacy (MPI-SP). I completed my Ph.D. in Physics at KAIST, where I focused on AI applications in nonequilibrium physics. My research interests lie at the intersection of AI, complex systems, and nonequilibrium physics, with a particular focus on deep learning approaches.
 
 I am passionate about using interdisciplinary approaches to gain a better understanding of how AI algorithms function and how we can improve their performance. To this end, I am currently exploring the use of neuroscience methods to gain insight into the behavior and performance of deep learning algorithms. I believe that this approach, known as brain-inspired AI, has the potential to lead to significant advances in the field of AI.
 
