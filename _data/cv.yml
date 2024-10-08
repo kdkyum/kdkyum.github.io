@@ -16,12 +16,12 @@
 - title: Employment History
   type: time_table
   contents:
-    - title: Postdoc
+    - title: Postdoctoral Researcher
       institution: Max Planck Institute for Security and Privacy (MPI-SP)
       year: 2024 - Current
-    - title: Senior Researcher
+    - title: Postdoctoral Researcher
       institution: Institute for Basic Science (IBS)
-      year: 2022 - Current
+      year: 2022 - 2024
       description:
         - Data Science Group, Center for Mathematical and Computational Sciences.
         - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha</a> (Chief Investigator).
