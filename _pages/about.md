@@ -28,10 +28,6 @@ For more information, check out my [publications](https://kdkyum.github.io/publi
 </div>
 
 <div class="publications">
-<h2>publications</h2>
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
-
+<h2>publications & Preprints</h2>
+{% bibliography -f papers %}
 </div>
