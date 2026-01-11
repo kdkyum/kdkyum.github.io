@@ -28,6 +28,6 @@ For more information, check out my [publications](https://kdkyum.github.io/publi
 </div>
 
 <div class="publications">
-<h2>publications & Preprints</h2>
+<h2>publications & preprints</h2>
 {% bibliography -f papers %}
 </div>
