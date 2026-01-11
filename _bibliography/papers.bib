@@ -1,54 +1,59 @@
 ---
 
 @article{kim2026parametric,
-  title    = {How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models},
-  author   = {Kim, Minsung and Kim, Dong-Kyum and Kwon, Jea and Yang, Nakyeong and Jung, Kyomin and Cha, Meeyoung},
-  journal  = {arXiv preprint arXiv:2510.02370},
-  html     = {https://arxiv.org/abs/2510.02370},
-  year     = {2025},
-  abbr     = {Preprint},
-  abstract = {Large language models leverage not only parametric knowledge acquired during training but also in-context knowledge provided at inference time, despite the absence of explicit training objectives for using both sources. Prior work has further shown that when these knowledge sources conflict, models resolve the tension based on their internal confidence, preferring parametric knowledge for high-confidence facts while deferring to contextual information for less familiar ones. However, the training conditions that give rise to such knowledge utilization behaviors remain unclear. To address this gap, we conduct controlled experiments in which we train language models while systematically manipulating key properties of the training data. Our results reveal a counterintuitive finding: three properties commonly regarded as detrimental must co-occur for robust knowledge utilization and conflict resolution to emerge: (i) intra-document repetition of information, (ii) a moderate degree of within-document inconsistency, and (iii) a skewed knowledge frequency distribution. We further validate that the same training dynamics observed in our controlled setting also arise during real-world language model pretraining, and we analyze how post-training procedures can reshape models' knowledge preferences. Together, our findings provide concrete empirical guidance for training language models that harmoniously integrate parametric and in-context knowledge.}
+  title       = {How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models},
+  author      = {Kim, Minsung and Kim, Dong-Kyum and Kwon, Jea and Yang, Nakyeong and Jung, Kyomin and Cha, Meeyoung},
+  journal     = {arXiv preprint arXiv:2510.02370},
+  html        = {https://arxiv.org/abs/2510.02370},
+  year        = {2025},
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  abstract    = {Large language models leverage not only parametric knowledge acquired during training but also in-context knowledge provided at inference time, despite the absence of explicit training objectives for using both sources. Prior work has further shown that when these knowledge sources conflict, models resolve the tension based on their internal confidence, preferring parametric knowledge for high-confidence facts while deferring to contextual information for less familiar ones. However, the training conditions that give rise to such knowledge utilization behaviors remain unclear. To address this gap, we conduct controlled experiments in which we train language models while systematically manipulating key properties of the training data. Our results reveal a counterintuitive finding: three properties commonly regarded as detrimental must co-occur for robust knowledge utilization and conflict resolution to emerge: (i) intra-document repetition of information, (ii) a moderate degree of within-document inconsistency, and (iii) a skewed knowledge frequency distribution. We further validate that the same training dynamics observed in our controlled setting also arise during real-world language model pretraining, and we analyze how post-training procedures can reshape models' knowledge preferences. Together, our findings provide concrete empirical guidance for training language models that harmoniously integrate parametric and in-context knowledge.}
 }
 
 @article{kim2025bilinear,
-  title    = {Bilinear relational structure fixes reversal curse and enables consistent model editing},
-  author   = {Kim, Dong-Kyum and Kim, Minsung and Kwon, Jea and Yang, Nakyeong and Cha, Meeyoung},
-  journal  = {arXiv preprint arXiv:2509.21993},
-  html     = {https://arxiv.org/abs/2509.21993},
-  year     = {2025},
-  abbr     = {Preprint},
-  abstract = {The reversal curse -- a language model's (LM) inability to infer an unseen fact ``B is A'' from a learned fact ``A is B'' -- is widely considered a fundamental limitation. We show that this is not an inherent failure but an artifact of how models encode knowledge. By training LMs from scratch on a synthetic dataset of relational knowledge graphs, we demonstrate that bilinear relational structure emerges in their hidden representations. This structure substantially alleviates the reversal curse, enabling LMs to infer unseen reverse facts. Crucially, we also find that this bilinear structure plays a key role in consistent model editing. When a fact is updated in a LM with this structure, the edit correctly propagates to its reverse and other logically dependent facts. In contrast, models lacking this representation not only suffer from the reversal curse but also fail to generalize edits, further introducing logical inconsistencies. Our results establish that training on a relational knowledge dataset induces the emergence of bilinear internal representations, which in turn enable LMs to behave in a logically consistent manner after editing. This implies that the success of model editing depends critically not just on editing algorithms but on the underlying representational geometry of the knowledge being modified.}
+  title       = {Bilinear relational structure fixes reversal curse and enables consistent model editing},
+  author      = {Kim, Dong-Kyum and Kim, Minsung and Kwon, Jea and Yang, Nakyeong and Cha, Meeyoung},
+  journal     = {arXiv preprint arXiv:2509.21993},
+  html        = {https://arxiv.org/abs/2509.21993},
+  year        = {2025},
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  abstract    = {The reversal curse -- a language model's (LM) inability to infer an unseen fact ``B is A'' from a learned fact ``A is B'' -- is widely considered a fundamental limitation. We show that this is not an inherent failure but an artifact of how models encode knowledge. By training LMs from scratch on a synthetic dataset of relational knowledge graphs, we demonstrate that bilinear relational structure emerges in their hidden representations. This structure substantially alleviates the reversal curse, enabling LMs to infer unseen reverse facts. Crucially, we also find that this bilinear structure plays a key role in consistent model editing. When a fact is updated in a LM with this structure, the edit correctly propagates to its reverse and other logically dependent facts. In contrast, models lacking this representation not only suffer from the reversal curse but also fail to generalize edits, further introducing logical inconsistencies. Our results establish that training on a relational knowledge dataset induces the emergence of bilinear internal representations, which in turn enable LMs to behave in a logically consistent manner after editing. This implies that the success of model editing depends critically not just on editing algorithms but on the underlying representational geometry of the knowledge being modified.}
 }
 
 @article{kim2025unlearnneuron,
-  title    = {Erase or Hide? Suppressing Spurious Unlearning Neurons for Robust Unlearning},
-  author   = {Yang, Nakyeong and Kim, Dong-Kyum and Kwon, Jea and Kim, Minsung and Jung, Kyomin and Cha, Meeyoung},
-  journal  = {arXiv preprint arXiv:2509.22263},
-  html     = {https://arxiv.org/abs/2509.22263},
-  year     = {2025},
-  abbr     = {Preprint},
-  abstract = {Large language models trained on web-scale data can memorize private or sensitive knowledge, raising significant privacy risks. Although some unlearning methods mitigate these risks, they remain vulnerable to "relearning" during subsequent training, allowing a substantial portion of forgotten knowledge to resurface. In this paper, we show that widely used unlearning methods cause shallow alignment: instead of faithfully erasing target knowledge, they generate spurious unlearning neurons that amplify negative influence to hide it. To overcome this limitation, we introduce Ssiuu, a new class of unlearning methods that employs attribution-guided regularization to prevent spurious negative influence and faithfully remove target knowledge. Experimental results confirm that our method reliably erases target knowledge and outperforms strong baselines across two practical retraining scenarios: (1) adversarial injection of private data, and (2) benign attack using an instruction-following benchmark. Our findings highlight the necessity of robust and faithful unlearning methods for safe deployment of language models.}
+  title       = {Erase or Hide? Suppressing Spurious Unlearning Neurons for Robust Unlearning},
+  author      = {Yang, Nakyeong and Kim, Dong-Kyum and Kwon, Jea and Kim, Minsung and Jung, Kyomin and Cha, Meeyoung},
+  journal     = {arXiv preprint arXiv:2509.22263},
+  html        = {https://arxiv.org/abs/2509.22263},
+  year        = {2025},
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  abstract    = {Large language models trained on web-scale data can memorize private or sensitive knowledge, raising significant privacy risks. Although some unlearning methods mitigate these risks, they remain vulnerable to "relearning" during subsequent training, allowing a substantial portion of forgotten knowledge to resurface. In this paper, we show that widely used unlearning methods cause shallow alignment: instead of faithfully erasing target knowledge, they generate spurious unlearning neurons that amplify negative influence to hide it. To overcome this limitation, we introduce Ssiuu, a new class of unlearning methods that employs attribution-guided regularization to prevent spurious negative influence and faithfully remove target knowledge. Experimental results confirm that our method reliably erases target knowledge and outperforms strong baselines across two practical retraining scenarios: (1) adversarial injection of private data, and (2) benign attack using an instruction-following benchmark. Our findings highlight the necessity of robust and faithful unlearning methods for safe deployment of language models.}
 }
 
 @article{song2025uncovering,
-  title    = {Uncovering Emergent Physics Representations Learned In-Context by Large Language Models},
-  author   = {Song, Yeongwoo and Bae, Jaeyong and Kim, Dong-Kyum and Jeong, Hawoong},
-  journal  = {arXiv preprint arXiv:2508.12448},
-  html     = {https://arxiv.org/abs/2508.12448},
-  year     = {2025},
-  abbr     = {Preprint},
-  abstract = {Large language models (LLMs) exhibit impressive in-context learning (ICL) abilities, enabling them to solve wide range of tasks via textual prompts alone. As these capabilities advance, the range of applicable domains continues to expand significantly. However, identifying the precise mechanisms or internal structures within LLMs that allow successful ICL across diverse, distinct classes of tasks remains elusive. Physics-based tasks offer a promising testbed for probing this challenge. Unlike synthetic sequences such as basic arithmetic or symbolic equations, physical systems provide experimentally controllable, real-world data based on structured dynamics grounded in fundamental principles. This makes them particularly suitable for studying the emergent reasoning behaviors of LLMs in a realistic yet tractable setting. Here, we mechanistically investigate the ICL ability of LLMs, especially focusing on their ability to reason about physics. Using a dynamics forecasting task in physical systems as a proxy, we evaluate whether LLMs can learn physics in context. We first show that the performance of dynamics forecasting in context improves with longer input contexts. To uncover how such capability emerges in LLMs, we analyze the model's residual stream activations using sparse autoencoders (SAEs). Our experiments reveal that the features captured by SAEs correlate with key physical variables, such as energy. These findings demonstrate that meaningful physical concepts are encoded within LLMs during in-context learning. In sum, our work provides a novel case study that broadens our understanding of how LLMs learn in context.}
+  title       = {Uncovering Emergent Physics Representations Learned In-Context by Large Language Models},
+  author      = {Song, Yeongwoo and Bae, Jaeyong and Kim, Dong-Kyum and Jeong, Hawoong},
+  journal     = {arXiv preprint arXiv:2508.12448},
+  html        = {https://arxiv.org/abs/2508.12448},
+  year        = {2025},
+  abbr        = {Preprint},
+  bibtex_show = {true},
+  abstract    = {Large language models (LLMs) exhibit impressive in-context learning (ICL) abilities, enabling them to solve wide range of tasks via textual prompts alone. As these capabilities advance, the range of applicable domains continues to expand significantly. However, identifying the precise mechanisms or internal structures within LLMs that allow successful ICL across diverse, distinct classes of tasks remains elusive. Physics-based tasks offer a promising testbed for probing this challenge. Unlike synthetic sequences such as basic arithmetic or symbolic equations, physical systems provide experimentally controllable, real-world data based on structured dynamics grounded in fundamental principles. This makes them particularly suitable for studying the emergent reasoning behaviors of LLMs in a realistic yet tractable setting. Here, we mechanistically investigate the ICL ability of LLMs, especially focusing on their ability to reason about physics. Using a dynamics forecasting task in physical systems as a proxy, we evaluate whether LLMs can learn physics in context. We first show that the performance of dynamics forecasting in context improves with longer input contexts. To uncover how such capability emerges in LLMs, we analyze the model's residual stream activations using sparse autoencoders (SAEs). Our experiments reveal that the features captured by SAEs correlate with key physical variables, such as energy. These findings demonstrate that meaningful physical concepts are encoded within LLMs during in-context learning. In sum, our work provides a novel case study that broadens our understanding of how LLMs learn in context.}
 }
 
 
 @inproceedings{kim2025search,
-  title     = {In Search of the Engram in LLMs: A Neuroscience Perspective on the Memory Functions in AI Models},
-  author    = {Kim, Minsung and Kwon, Jea and Kim, Dong-Kyum and Cha, Meeyoung},
-  booktitle = {The Fourth Blogpost Track at ICLR 2025},
-  html      = {https://d2jud02ci9yv69.cloudfront.net/2025-04-28-engram-172/blog/engram/},
-  year      = {2025},
-  abbr      = {ICLR Blogpost},
-  abstract  = {Large Language Models (LLMs) are enhancing our daily lives but also pose risks like spreading misinformation and violating privacy, highlighting the importance of understanding how they process and store information. This blogpost offers a fresh look into a neuroscience-inspired perspective of LLM's memory functions, based on the concept of engrams-the physical substrate of memory in living organism. We discuss a synergy between AI research and neuroscience, as both fields cover complexities of intelligent systems.}
+  title       = {In Search of the Engram in LLMs: A Neuroscience Perspective on the Memory Functions in AI Models},
+  author      = {Kim, Minsung and Kwon, Jea and Kim, Dong-Kyum and Cha, Meeyoung},
+  booktitle   = {The Fourth Blogpost Track at ICLR 2025},
+  html        = {https://d2jud02ci9yv69.cloudfront.net/2025-04-28-engram-172/blog/engram/},
+  year        = {2025},
+  abbr        = {ICLR Blogpost},
+  bibtex_show = {true},
+  abstract    = {Large Language Models (LLMs) are enhancing our daily lives but also pose risks like spreading misinformation and violating privacy, highlighting the importance of understanding how they process and store information. This blogpost offers a fresh look into a neuroscience-inspired perspective of LLM's memory functions, based on the concept of engrams-the physical substrate of memory in living organism. We discuss a synergy between AI research and neuroscience, as both fields cover complexities of intelligent systems.}
 }
 
 @article{kim2024music,
