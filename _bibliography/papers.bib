@@ -1,4 +1,16 @@
 ---
+@inproceedings{kwon2026engram,
+  title       = {AI Engram: In Search of Memory Traces in Artificial Intelligence},
+  author      = {Kwon, Jea and Kim, Dong-Kyum and Kim, Jiwon and Kim, Yonghyun and Kook, Woong and Cha, Meeyoung},
+  year        = {2026},
+  abbr        = {ICML},
+  abstract    = {Memory formation is fundamental to intelligence, yet whether deep neural networks preserve identifiable memory traces—analogous to biological memory units—remains an open question. This work introduces a geometric framework to identify such "AI engrams," by formalizing the neuroscientific criteria of specificity, reactivation, sufficiency, and necessity into a constrained inverse problem. We derive a closed-form estimator that isolates individual memory traces from globally entangled parameters. Theoretical analysis reveals that this biologically-derived solution corresponds to a natural gradient update on the parameter manifold. AI engrams enable surgical manipulation of learned knowledge: any subset of memories can be composed or erased through linear arithmetic, without iterative optimization. Experiments ranging from simple MLPs to LLMs demonstrate the causal validity and substantial scalability of AI engrams. Together, these results bridge theories of biological memory and artificial representation learning, offering geometric insight into how deep networks simultaneously support functional specificity within distributed storage.},
+  booktitle   = {Proceedings of the 43rd International Conference on Machine Learning},
+  note        = {Spotlight},
+  selected    = {true},
+  bibtex_show = {true}
+}
+
 @inproceedings{kim2026bilinear,
   title       = {Bilinear representation mitigates reversal curse and enables consistent model editing},
   author      = {Kim, Dong-Kyum and Kim, Minsung and Kwon, Jea and Yang, Nakyeong and Cha, Meeyoung},
@@ -23,15 +35,16 @@
   selected    = {true},
   bibtex_show = {true}
 }
-@article{kim2026parametric,
+@inproceedings{kim2026parametric,
   title       = {How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models},
   author      = {Kim, Minsung and Kim, Dong-Kyum and Kwon, Jea and Yang, Nakyeong and Jung, Kyomin and Cha, Meeyoung},
-  journal     = {arXiv preprint arXiv:2510.02370},
-  url         = {https://arxiv.org/abs/2510.02370},
-  year        = {2025},
-  abbr        = {Preprint},
+  booktitle   = {Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics},
+  url         = {https://openreview.net/forum?id=KxlkI3b78h},
+  year        = {2026},
+  abbr        = {ACL},
   bibtex_show = {true},
-  abstract    = {Large language models leverage not only parametric knowledge acquired during training but also in-context knowledge provided at inference time, despite the absence of explicit training objectives for using both sources. Prior work has further shown that when these knowledge sources conflict, models resolve the tension based on their internal confidence, preferring parametric knowledge for high-confidence facts while deferring to contextual information for less familiar ones. However, the training conditions that give rise to such knowledge utilization behaviors remain unclear. To address this gap, we conduct controlled experiments in which we train language models while systematically manipulating key properties of the training data. Our results reveal a counterintuitive finding: three properties commonly regarded as detrimental must co-occur for robust knowledge utilization and conflict resolution to emerge: (i) intra-document repetition of information, (ii) a moderate degree of within-document inconsistency, and (iii) a skewed knowledge frequency distribution. We further validate that the same training dynamics observed in our controlled setting also arise during real-world language model pretraining, and we analyze how post-training procedures can reshape models' knowledge preferences. Together, our findings provide concrete empirical guidance for training language models that harmoniously integrate parametric and in-context knowledge.}
+  selected    = {true},
+  abstract    = {Large language models leverage both parametric knowledge acquired during pretraining and in-context knowledge provided at inference time. Crucially, when these sources conflict, models arbitrate based on their internal confidence, preferring parametric knowledge for high-confidence facts while deferring to context for less familiar ones. However, the training conditions that give rise to these fundamental behaviors remain unclear. Here we conduct controlled experiments using synthetic corpora to identify the specific data properties that shape knowledge utilization. Our results reveal a counterintuitive finding: the robust, balanced use of both knowledge sources is an emergent property that requires the co-occurrence of three factors typically considered detrimental, including (i) intra-document repetition, (ii) a moderate degree of intra-document inconsistency, and (iii) a skewed knowledge distribution. We further show that these dynamics arise in real-world language model pretraining and analyze how post-training procedures reshape arbitration strategies. Together, our findings provide empirical guidance for designing training data that supports the reliable integration of parametric and in-context knowledge in language models.}
 }
 
 
