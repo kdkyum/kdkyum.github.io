@@ -44,6 +44,39 @@ body.sticky-bottom-footer {
 
 
 /*****************************************************************************
+* Academic Links
+*****************************************************************************/
+
+.flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.academic-link-box {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--global-text-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+
+    .academic-link {
+      color: white;
+    }
+  }
+}
+
+.academic-link {
+  color: var(--global-text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/*****************************************************************************
 * Projects
 *****************************************************************************/
 

@@ -3,11 +3,23 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  <a href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &nbsp;
-  <a href="https://twitter.com/kdkyum531" title="Twitter"><i class="fab fa-twitter"></i></a> &nbsp;
-  <a href="https://linkedin.com/in/kdkyum" title="LinkedIn"><i class="fab fa-linkedin"></i></a> &nbsp;
-  <a href="https://github.com/kdkyum" title="GitHub"><i class="fab fa-github"></i></a> &nbsp;
-  <a href="/assets/pdf/CV_DKK.pdf" title="CV"><i class="ai ai-cv"></i></a>
+  <div class="flex-box">
+  <div class="academic-link-box" onclick="location.href='https://scholar.google.com/citations?user=-pvD9xUAAAAJ'" style="cursor:pointer">
+  <a class="academic-link" href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ">Google Scholar <i class="ai ai-google-scholar-square"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href='https://twitter.com/kdkyum531'" style="cursor:pointer">
+  <a class="academic-link" href="https://x.com/kdkyum531">Twitter <i class="fab fa-twitter"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href='https://www.linkedin.com/in/kdkyum/'" style="cursor:pointer">
+  <a class="academic-link" href="https://www.linkedin.com/in/kdkyum/">LinkedIn <i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href='https://github.com/kdkyum'" style="cursor:pointer">
+  <a class="academic-link" href="https://github.com/kdkyum">GitHub <i class="fab fa-github"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href='/assets/pdf/CV_DKK.pdf'" style="cursor:pointer">
+  <a class="academic-link" href="/assets/pdf/CV_DKK.pdf">CV <i class="fas fa-file"></i></a>
+  </div>
+  </div>
 
 profile:
   align: right
