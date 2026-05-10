@@ -2,13 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI researcher interested in how AI stores & updates information
+subtitle: >
+  <a href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &nbsp;
+  <a href="https://twitter.com/kdkyum531" title="Twitter"><i class="fab fa-twitter"></i></a> &nbsp;
+  <a href="https://linkedin.com/in/kdkyum" title="LinkedIn"><i class="fab fa-linkedin"></i></a> &nbsp;
+  <a href="https://github.com/kdkyum" title="GitHub"><i class="fab fa-github"></i></a> &nbsp;
+  <a href="/assets/pdf/CV_DKK.pdf" title="CV"><i class="ai ai-cv"></i></a>
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  address:
+  address: >
+    <p>AI researcher interested in how AI stores & updates information</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
