@@ -9,7 +9,7 @@ profile:
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>dong-kyum.kim [at] mpi-sp.org</p>
+    <p style="font-size: 0.8rem;">dong-kyum.kim [at] mpi-sp.org</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
