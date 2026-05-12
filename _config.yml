@@ -257,7 +257,6 @@ filtered_bibtex_keywords:
     bibtex_show,
     html,
     pdf,
-    selected,
     supp,
     blog,
     code,
@@ -265,6 +264,7 @@ filtered_bibtex_keywords:
     slides,
     website,
     preview,
+    tweet,
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
