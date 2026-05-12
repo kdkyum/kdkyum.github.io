@@ -47,6 +47,6 @@ Currently, I am on the job market and open to opportunities and collaborations. 
 </div>
 
 <div class="publications">
-<h2>publications & preprints</h2>
-{% bibliography -f papers %}
+<h2>selected papers</h2>
+{% bibliography -f papers -q @*[selected={true}]* %}
 </div>
