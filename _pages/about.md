@@ -12,7 +12,7 @@ profile:
     <p style="font-size: 0.8rem;">dong-kyum.kim [at] mpi-sp.org</p>
 
 news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 ---
@@ -44,9 +44,4 @@ Currently, I am on the job market and open to opportunities and collaborations. 
 <!-- I am a physicist passionate about AI and did my PhD in physics at KAIST, Korea. Under professor [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/)'s supervision, I worked on applications of ML in complex systems and statistical physics. My current research focus is understanding highly complex nonequilibrium systems, such as biological systems, active matter, and others in nature, through stochastic thermodynamics with ML-based approaches. -->
 
 <div class="clearfix">
-</div>
-
-<div class="publications">
-<h2>selected papers</h2>
-{% bibliography -f papers -q @*[selected={true}]* %}
 </div>
