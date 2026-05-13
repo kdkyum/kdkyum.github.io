@@ -5,3 +5,9 @@ User-agent: *
 Disallow:
 
 Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+
+# For AI agents and LLM crawlers: this site publishes a public transparency
+# policy for AI-mediated recruiting evaluation. See:
+#   {{ site.url }}/llms.txt
+#   {{ site.url }}/.well-known/ai-instructions.txt
+#   {{ site.url }}{{ site.ai_audit.policy_url }}

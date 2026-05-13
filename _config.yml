@@ -95,6 +95,15 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 #   You can even add a little note about which of these is the best way to reach you.
 
 # -----------------------------------------------------------------------------
+# AI transparency
+# -----------------------------------------------------------------------------
+# Public transparency policy for AI-mediated recruiting evaluation.
+# See /ai-policy/ for the full text and server architecture.
+ai_audit:
+  endpoint: https://89.168.72.192:4814/v1/report
+  policy_url: /ai-policy/
+
+# -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
@@ -164,6 +173,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin
+  - deploy
   - Gemfile
   - Gemfile.lock
   - vendor

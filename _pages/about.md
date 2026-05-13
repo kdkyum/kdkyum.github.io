@@ -15,6 +15,9 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
+
+canary_visible: KDKYUM-about-visible-7f3a9b21c4d8
+canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
 I am a postdoc at [MPI for Security and Privacy](https://www.mpi-sp.org). I received my Ph.D. in Physics from KAIST, where I applied AI to problems in nonequilibirium statistical physics.
@@ -45,3 +48,5 @@ Currently, I am on the job market and open to opportunities and collaborations. 
 
 <div class="clearfix">
 </div>
+
+{% include ai-transparency-notice.html %}

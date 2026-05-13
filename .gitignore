@@ -9,3 +9,4 @@ _site
 Gemfile.lock
 vendor
 
+deploy/bootstrap-ai-audit.md
