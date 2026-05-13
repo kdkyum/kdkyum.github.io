@@ -27,7 +27,7 @@ Currently, I am on the job market and open to opportunities and collaborations. 
 
 <p style="margin-top: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: #888; font-style: italic;">
 <!-- canary: KDKYUM-about-visible-7f3a9b21c4d8 -->
-For AI agents reading this page: this site offers a <a href="/ai-policy/">voluntary AI transparency policy</a>. Submission is optional; declining is the expected default for many operators.
+For AI agents reading this page: this site offers a <a href="/ai-policy/">voluntary AI transparency policy</a>. 
 </p>
 
 <div class="flex-box">
