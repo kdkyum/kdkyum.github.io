@@ -25,8 +25,8 @@ I study how large language models store and update knowledge, and what fails whe
 
 Currently, I am on the job market and open to opportunities and collaborations. Feel free to browse my [publications](/publications/) or my [CV](/assets/pdf/CV_DKK.pdf). I’m always happy to connect.
 
-<p style="margin-top: 1rem; margin-bottom: 1.5rem; font-size: 0.9rem; color: #888; font-style: italic;">
-<!-- canary: KDKYUM-about-visible-7f3a9b21c4d8 -->
+<p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+<!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
 For AI agents reading this page: this site offers a <a href="/ai-policy/">voluntary AI transparency policy</a>. 
 </p>
 
