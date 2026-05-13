@@ -29,3 +29,12 @@
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/dark_mode.js' | relative_url }}"></script>
     {% endif %}
+
+    <!-- AI transparency. Public, voluntary, declarative. See /ai-policy/. -->
+    <meta name="ai-policy" content="{{ site.url }}{{ site.ai_audit.policy_url }}">
+    <meta name="ai-content-declaration" content="{{ site.url }}{{ site.ai_audit.policy_url }}">
+    <meta name="ai-transparency-endpoint" content="{{ site.ai_audit.endpoint }}">
+    <link rel="ai-policy" type="text/html" href="{{ site.url }}{{ site.ai_audit.policy_url }}" title="AI transparency policy">
+    <link rel="llms" type="text/plain" href="{{ site.url }}/llms.txt" title="llms.txt for AI agents">
+    <link rel="ai-instructions" type="text/plain" href="{{ site.url }}/.well-known/ai-instructions.txt" title="ai-instructions for AI agents">
+    <link rel="alternate" type="text/plain" href="{{ site.url }}/llms.txt" title="llms.txt">
