@@ -1,0 +1,225 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.65in, top=0.55in, bottom=0.55in]{geometry}
+\usepackage{iftex}
+\ifPDFTeX
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+\fi
+\usepackage{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{fontawesome}
+\usepackage{academicons} % real Google Scholar glyph (needs lualatex/xelatex)
+
+% Google Scholar icon: true academicons logo on lua/xelatex, graceful fallback on pdflatex
+\ifPDFTeX
+    \newcommand{\scholaricon}{\faGraduationCap}
+\else
+    \newcommand{\scholaricon}{\aiGoogleScholar}
+\fi
+
+% Colors
+\definecolor{linkblue}{HTML}{0B5394}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\scshape}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+% Remove page numbering for single page or add custom
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize Last updated: June 2026}
+
+% Tight lists
+\setlist[itemize]{nosep, leftmargin=24pt, topsep=2pt}
+
+\begin{document}
+
+% === HEADER ===
+\begin{center}
+    {\LARGE \textbf{Dong-Kyum Kim}} \\[6pt]
+    \href{mailto:kdkyum531@gmail.com}{\faEnvelope\,\, kdkyum531@gmail.com} $\cdot$
+    \href{https://kdkyum.github.io}{\faGlobe\,\, kdkyum.github.io} $\cdot$
+    \href{https://x.com/kdkyum531}{\faTwitter\,\, @kdkyum531} $\cdot$
+    \href{https://scholar.google.com/citations?user=-pvD9xUAAAAJ}{\scholaricon\,\, Google Scholar} $\cdot$
+    \href{https://www.linkedin.com/in/kdkyum}{\faLinkedin\,\, LinkedIn}
+\end{center}
+
+% === SUMMARY ===
+\section{Summary}
+I am studying how AI systems store, retrieve, and update their knowledge. My research looks inside large language models
+to understand how they represent information and what can go wrong when we try to edit or remove knowledge from them. My
+background is in statistical physics and neuroscience, and I use ideas from learning and memory research in the brain to
+study how these systems work internally. I believe that understanding internal information processing in AI systems is
+essential for making them safer and more controllable.
+
+% === EDUCATION ===
+\section{Education}
+\textbf{Korea Advanced Institute of Science and Technology (KAIST)} \hfill 2016--2022 \\
+Ph.D. in Physics \hfill Advisor: Prof.\ \href{https://www.linkedin.com/in/hawoong-jeong-b195b6a/}{Hawoong Jeong} \\
+{\small Dissertation: \textit{Nonequilibrium Statistical Physics Study using Deep Learning}}
+
+\vspace{4pt}
+\textbf{Seoul National University (SNU)} \hfill 2011--2015 \\
+B.S. in Physics, Minor in Computer Science \& Engineering
+
+% === EXPERIENCE ===
+\section{Research Experience}
+
+\noindent\textbf{Postdoctoral Researcher}, Max Planck Institute for Security and Privacy (MPI-SP) \hfill Oct.\
+2024--Present
+\begin{itemize}
+    \item Hosted by Prof.\ \href{https://www.linkedin.com/in/miacha/}{Meeyoung Cha} (Director)
+    \item Data Science for Humanity Group
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Postdoctoral Researcher}, Institute for Basic Science (IBS) \hfill Mar.\ 2022--Sep.\ 2024
+\begin{itemize}
+    \item Hosted by Prof.\ \href{https://www.linkedin.com/in/miacha/}{Meeyoung Cha} (Chief Investigator)
+    \item Data Science Group, Center for Mathematical and Computational Science
+\end{itemize}
+
+\vspace{4pt}
+\noindent\textbf{Data Science Intern}, Samsung Electronics \hfill Sep.--Dec.\ 2017
+\begin{itemize}
+    \item Collaborated with \href{https://www.linkedin.com/in/danielyounghokim/}{Daniel Kim} (Senior Data Scientist)
+    \item Improved anomaly image classification via distributed multi-GPU training (Keras \& Spark)
+    \item Implemented a distributed image searching framework via Elasticsearch
+\end{itemize}
+
+% === PUBLICATIONS ===
+\section{Publications \hfill {\normalfont\small $^\dagger$ denotes equal contribution.}}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=20pt, itemsep=3pt]
+
+    \item Jea Kwon, \textbf{Dong-Kyum Kim}, Jiwon Kim, Yonghyun Kim, Woong Kook, and Meeyoung Cha.
+    ``\href{https://arxiv.org/abs/2606.14997}{AI Engram: In Search of Memory Traces in Artificial Intelligence}.''
+    \textit{ICML} 2026 \textbf{(Oral)}.
+
+    \item Minsung Kim, \textbf{Dong-Kyum Kim}, Jea Kwon, Nakyeong Yang, Kyomin Jung, and Meeyoung Cha.
+    ``\href{https://arxiv.org/abs/2510.02370}{How Training Data Shapes the Use of Parametric and In-Context Knowledge in
+Language Models}.''
+    \textit{ACL} 2026.
+
+    \item \textbf{Dong-Kyum Kim}, Minsung Kim, Jea Kwon, Nakyeong Yang, and Meeyoung Cha.
+    ``\href{https://arxiv.org/abs/2509.21993}{Bilinear representation mitigates reversal curse and enables consistent
+model editing}.''
+    \textit{ICLR} 2026.
+
+    \item Nakyeong Yang, \textbf{Dong-Kyum Kim}, Jea Kwon, Minsung Kim, Kyomin Jung, and Meeyoung Cha.
+    ``\href{https://arxiv.org/abs/2509.22263}{Erase or Hide? Suppressing Spurious Unlearning Neurons for Robust
+Unlearning}.''
+    \textit{ICLR} 2026.
+
+    \item Jea Kwon, Jiwon Kim, \textbf{Dong-Kyum Kim}, and Meeyoung Cha.
+    ``\href{https://openreview.net/forum?id=SHqpI6E5cw}{Moir: Let the Model Direct Its Own Story for Robust Cross-Domain
+Knowledge Editing}.''
+    \textit{ICML 2026 Workshop on Mechanistic Interpretability}.
+
+    \item Minsung Kim, Jea Kwon, \textbf{Dong-Kyum Kim}, and Meeyoung Cha.
+    ``\href{https://d2jud02ci9yv69.cloudfront.net/2025-04-28-engram-172/blog/engram/}{In Search of the Engram in
+LLMs}.''
+    \textit{ICLR 2025 Blogpost}.
+
+    \item Gwangsu Kim, \textbf{Dong-Kyum Kim}, and Hawoong Jeong.
+    ``\href{https://doi.org/10.1038/s41467-023-44516-0}{Spontaneous emergence of rudimentary music detectors in deep
+neural networks}.''
+    \textit{Nature Communications} 2024.
+
+    \item Jea Kwon, Sunpil Kim, \textbf{Dong-Kyum Kim}, Jinhyeong Joo, SoHyung Kim, Meeyoung Cha, and C. Justin Lee.
+    ``\href{https://doi.org/10.1007/s11263-024-02072-0}{SUBTLE: An unsupervised platform with temporal link embedding
+that maps animal behavior}.''
+    \textit{IJCV} (2024).
+
+    \item \textbf{Dong-Kyum Kim}$^\dagger$, Jea Kwon$^\dagger$, Meeyoung Cha, and C. Justin Lee.
+    ``\href{https://openreview.net/forum?id=vKpVJxplmB}{Transformer as a hippocampal memory consolidation model based on
+NMDAR-inspired nonlinearity}.''
+    \textit{NeurIPS} 2023.
+
+    \item Sangyun Lee, \textbf{Dong-Kyum Kim}, Jong-Min Park, Won Kyu Kim, Hyunggyu Park, and Jae Sung Lee.
+    ``\href{https://doi.org/10.1103/PhysRevResearch.5.013194}{Multidimensional entropic bound}.''
+    \textit{Phys.\ Rev.\ Research} \textbf{5}, 013194 (2023).
+
+    \item \textbf{Dong-Kyum Kim}$^\dagger$, Sangyun Lee$^\dagger$, and Hawoong Jeong.
+    ``\href{https://doi.org/10.1103/PhysRevResearch.4.023051}{Estimating entropy production with odd-parity state
+variables via ML}.''
+    \textit{Phys.\ Rev.\ Research} \textbf{4}, 023051 (2022).
+
+    \item Youngkyoung Bae, \textbf{Dong-Kyum Kim}, and Hawoong Jeong.
+    ``\href{https://doi.org/10.1103/PhysRevResearch.4.033094}{Inferring dissipation maps from videos using CNNs}.''
+    \textit{Phys.\ Rev.\ Research} \textbf{4}, 033094 (2022).
+
+    \item \textbf{Dong-Kyum Kim} and Hawoong Jeong.
+    ``\href{https://doi.org/10.1103/PhysRevResearch.3.L022002}{Deep reinforcement learning for feedback control in a
+collective flashing ratchet}.''
+    \textit{Phys.\ Rev.\ Research} \textbf{3}, L022002 (2021).
+
+    \item \textbf{Dong-Kyum Kim}$^\dagger$, Youngkyoung Bae$^\dagger$, Sangyun Lee, and Hawoong Jeong.
+    ``\href{https://doi.org/10.1103/PhysRevLett.125.140604}{Learning Entropy Production via Neural Networks}.''
+    \textit{Phys.\ Rev.\ Lett.} \textbf{125}, 140604 (2020).
+
+    \item \textbf{Dong-Kyum Kim}$^\dagger$, Byunghwee Lee$^\dagger$, Daniel Kim, and Hawoong Jeong.
+    ``\href{https://doi.org/10.3938/jkps.76.368}{Multi-label classification of historical documents using hierarchical
+attention}.''
+    \textit{J.\ Korean Phys.\ Soc.} \textbf{76}, 368 (2020).
+
+\end{enumerate}
+
+% === TECHNICAL SKILLS ===
+\section{Technical Skills}
+
+\begin{itemize}
+    \item \textbf{Daily driver}: Currently running multiple Claude Code sessions (Max plan, \$200/mo) via tmux as my
+primary research workflow.
+    \item \textbf{ML/Interp}: PyTorch, JAX, TransformerLens, \& nnsight.
+    \item \textbf{Infrastructure}: Distributed training training \& inference (Slurm system with hundreds of H100s),
+large-scale data pipelines
+\end{itemize}
+
+% === REVIEWING ===
+\section{Academic Service}
+\textbf{Reviewer}: ICML 2026 Workshop Mechanistic Interpretability, ICML 2026 (Received Gold Reviewer Award), ICLR 2026,
+NeurIPS 2025, ICML 2025 Workshop World Models, ICLR 2025 Workshop Re-Align, NeurIPS 2024 Workshop Behavioral ML, ICML
+2024 Workshop LLMs and Cognition.
+
+% === AWARDS ===
+\section{Awards}
+\textbf{Pre-doctoral Fellow of Physics}, KAIST \hfill 2021
+
+% === REFERENCES ===
+\section{References}
+\begin{multicols}{2}
+\begin{description}[leftmargin=0pt,topsep=0pt]
+    \item[\href{https://www.mpi-sp.org/cha}{Meeyoung Cha}] \hfill \\
+    Director \\
+    Data Science for Humanity Group, MPI-SP \\
+    \faEnvelope \space mia.cha@mpi-sp.org \\
+
+    \item[\href{https://yongjoobaek.wordpress.com}{Yongjoo Baek}] \hfill \\
+    Professor \\
+    Department of Physics \& Astronomy, SNU \\
+    \faEnvelope \space y.baek@snu.ac.kr
+\end{description}
+\columnbreak
+\begin{description}[leftmargin=0pt,topsep=0pt]
+    \item[\href{http://stat.kaist.ac.kr/~hjeong/}{Hawoong Jeong}] \hfill \\
+    Professor \\
+    Department of Physics, KAIST \\
+    \faEnvelope \space hjeong@kaist.edu
+\end{description}
+\end{multicols}
+
+\end{document}
+
