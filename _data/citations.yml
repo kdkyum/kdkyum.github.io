@@ -1,7 +1,0 @@
-# Cached Google Scholar citation counts (used by the publication citation badges).
-# This starts empty; if you want it auto-populated, re-add the upstream
-# `.github/workflows/update-citations.yml` workflow, which refreshes it from your
-# Google Scholar profile (scholar_userid in _data/socials.yml).
-metadata:
-  last_updated: '2026-06-17'
-papers: {}

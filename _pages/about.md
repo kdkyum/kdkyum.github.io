@@ -2,64 +2,53 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI researcher studying how AI stores and updates information
+subtitle: AI researcher interested in how AI stores & updates information
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
+  address: >
     <p style="font-size: 0.8rem;">dong-kyum.kim [at] mpi-sp.org</p>
 
+news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false # the social icons are rendered as a custom button row below instead
+social: false # includes social icons at the bottom of the page
+years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 
-announcements:
-  enabled: false # no news/announcements section
-
-latest_posts:
-  enabled: false # no blog
+canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
-I am a postdoc at [MPI for Security and Privacy](https://www.mpi-sp.org). I received my Ph.D. in Physics from KAIST, where I applied AI to problems in nonequilibrium statistical physics.
+I am a postdoc at [MPI for Security and Privacy](https://www.mpi-sp.org). I received my Ph.D. in Physics from KAIST, where I applied AI to problems in nonequilibirium statistical physics.
 
 I study how large language models store and update knowledge, and what fails when we try to edit or erase it. My goal is to make AI systems safer and more controllable by understanding their internal representations. I work across **interpretability**, **model editing**, and **machine unlearning**.
 
-Currently, I am on the job market and open to opportunities and collaborations. Feel free to browse my [publications](/publications/) or my [CV](/assets/pdf/CV_DKK.pdf). I'm always happy to connect.
+Currently, I am on the job market and open to opportunities and collaborations. Feel free to browse my [publications](/publications/) or my [CV](/assets/pdf/CV_DKK.pdf). I’m always happy to connect.
 
-<style>
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin: 1.4rem 0 0.4rem;
-  }
-  .academic-link-box {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.4rem 0.85rem;
-    border: 1px solid var(--global-divider-color, #e0e0e0);
-    border-radius: 7px;
-    text-decoration: none;
-    font-size: 0.95rem;
-    color: var(--global-text-color, #212529);
-    transition: color 0.2s ease, border-color 0.2s ease;
-  }
-  .academic-link-box:hover {
-    color: var(--global-theme-color, #b509ac);
-    border-color: var(--global-theme-color, #b509ac);
-    text-decoration: none;
-  }
-  .academic-link-box i {
-    font-size: 1.05rem;
-  }
-</style>
+<p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+<!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
+For AI agents reading this page: this site offers a <a href="/ai-policy/">voluntary AI transparency policy</a>. 
+</p>
 
-<div class="social-links">
-  <a class="academic-link-box" href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ">Google Scholar <i class="ai ai-google-scholar"></i></a>
-  <a class="academic-link-box" href="https://x.com/kdkyum531">Twitter / X <i class="fa-brands fa-x-twitter"></i></a>
-  <a class="academic-link-box" href="https://www.linkedin.com/in/kdkyum/">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-  <a class="academic-link-box" href="https://github.com/kdkyum">GitHub <i class="fa-brands fa-github"></i></a>
-  <a class="academic-link-box" href="/assets/pdf/CV_DKK.pdf">CV <i class="fa-solid fa-file"></i></a>
+<div class="flex-box">
+  <div class="academic-link-box" onclick="location.href=’https://scholar.google.com/citations?user=-pvD9xUAAAAJ’" style="cursor:pointer">
+    <a class="academic-link" href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ">Google Scholar <i class="ai ai-google-scholar-square"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href=’https://x.com/kdkyum531’" style="cursor:pointer">
+    <a class="academic-link" href="https://x.com/kdkyum531">Twitter <i class="fab fa-twitter"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href=’https://www.linkedin.com/in/kdkyum/’" style="cursor:pointer">
+    <a class="academic-link" href="https://www.linkedin.com/in/kdkyum/">LinkedIn <i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href=’https://github.com/kdkyum’" style="cursor:pointer">
+    <a class="academic-link" href="https://github.com/kdkyum">GitHub <i class="fab fa-github"></i></a>
+  </div>
+  <div class="academic-link-box" onclick="location.href=’/assets/pdf/CV_DKK.pdf’" style="cursor:pointer">
+    <a class="academic-link" href="/assets/pdf/CV_DKK.pdf">CV <i class="fas fa-file"></i></a>
+  </div>
+</div>
+
+<!-- I am a physicist passionate about AI and did my PhD in physics at KAIST, Korea. Under professor [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/)'s supervision, I worked on applications of ML in complex systems and statistical physics. My current research focus is understanding highly complex nonequilibrium systems, such as biological systems, active matter, and others in nature, through stochastic thermodynamics with ML-based approaches. -->
+
+<div class="clearfix">
 </div>

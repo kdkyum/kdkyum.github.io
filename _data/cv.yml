@@ -1,79 +1,44 @@
-cv:
-  name: Dong-Kyum Kim
-  label: Postdoctoral Researcher
-  email: dong-kyum.kim@mpi-sp.org
-  location: Bochum, Germany
-  summary: >-
-    AI researcher studying how large language models store, update, and forget
-    knowledge — across interpretability, model editing, and machine unlearning.
+- title: Education
+  type: time_table
+  contents:
+    - title: Doctor of Philosophy (PhD) in Physics
+      institution: Korea Advanced Institute of Science and Technology (KAIST), Daejeon, South Korea
+      year: 2016 - 2022
+      description:
+        - Supervised by Prof. <a href="http://stat.kaist.ac.kr/~hjeong/">Hawoong Jeong</a>.
+        - <a>Dissertation:</a> <a href="https://library.kaist.ac.kr/search/ctlgSearch/posesn/view.do?bibctrlno=996479&se=t0&ty=B&_csrf=0f50c12b-98bc-44b1-b8e4-d438676d9366">"Nonequilibrium Statistical Physics Study using Deep Learning."</a> <a href="/assets/pdf/phd_dissertation.pdf">[pdf]</a>
+    - title: Bachelor of Science (BS) in Physics
+      institution: Seoul National University (SNU), Seoul, South Korea
+      year: 2011 - 2015
+      description:
+        - Major in Physics and Minor in Computer Science & Engineering.
 
-  social_networks:
-    - network: GitHub
-      username: kdkyum
-    - network: LinkedIn
-      username: kdkyum
-    - network: X
-      username: kdkyum531
+- title: Employment History
+  type: time_table
+  contents:
+    - title: Postdoctoral Researcher
+      institution: Max Planck Institute for Security and Privacy (MPI-SP)
+      year: 2024 - Current
+    - title: Postdoctoral Researcher
+      institution: Institute for Basic Science (IBS)
+      year: 2022 - 2024
+      description:
+        - Data Science Group, Center for Mathematical and Computational Sciences.
+        - Hosted by Prof. <a href="https://ds.ibs.re.kr/ci/">Meeyoung Cha</a> (Chief Investigator).
+    - title: Machine Learning Intern
+      institution: Samsung Electronics
+      year: Sep. 2017 - Dec. 2017
+      description:
+        - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).
+        - Improved anomaly image classification tasks via distributed multi-GPU training methods of Keras and Spark.
+        - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
 
-  sections:
-    Education:
-      - institution: Korea Advanced Institute of Science and Technology (KAIST)
-        location: Daejeon, South Korea
-        area: Physics
-        studyType: PhD
-        start_date: 2016
-        end_date: 2022
-        highlights:
-          - "Supervised by Prof. [Hawoong Jeong](http://stat.kaist.ac.kr/~hjeong/)."
-          - 'Dissertation: "Nonequilibrium Statistical Physics Study using Deep Learning." [[pdf]](/assets/pdf/phd_dissertation.pdf)'
+- title: Research Interests
+  type: list
+  contents:
+    - Artificial Intelligence (AI), Deep Learning, Machine Learning, Interpretable AI, Mechanistic Interpretability, Large Language Models (LLMs), Data Science, AI for Physics, Statistical Physics, Nonequilibrium Physics, Neuroscience, Brain-Inspired AI, Learning & Memory
 
-      - institution: Seoul National University (SNU)
-        location: Seoul, South Korea
-        area: Physics (Minor in Computer Science & Engineering)
-        studyType: BS
-        start_date: 2011
-        end_date: 2015
-
-    Experience:
-      - company: Max Planck Institute for Security and Privacy (MPI-SP)
-        position: Postdoctoral Researcher
-        location: Bochum, Germany
-        start_date: 2024
-        end_date: present
-
-      - company: Institute for Basic Science (IBS)
-        position: Postdoctoral Researcher
-        location: Daejeon, South Korea
-        start_date: 2022
-        end_date: 2024
-        summary: Data Science Group, Center for Mathematical and Computational Sciences.
-        highlights:
-          - "Hosted by Prof. [Meeyoung Cha](https://ds.ibs.re.kr/ci/) (Chief Investigator)."
-
-      - company: Samsung Electronics
-        position: Machine Learning Intern
-        location: South Korea
-        start_date: 2017-09
-        end_date: 2017-12
-        highlights:
-          - "Collaborated with [Daniel Kim](https://www.linkedin.com/in/danielyounghokim/) (Senior Data Scientist)."
-          - "Improved anomaly image classification via distributed multi-GPU training (Keras, Spark)."
-          - "Implemented a distributed image-search framework (Elasticsearch) to detect similar patterns in images."
-
-    Interests:
-      - name: Research
-        keywords:
-          - Interpretable AI
-          - Mechanistic Interpretability
-          - Large Language Models
-          - Model Editing
-          - Machine Unlearning
-          - Deep Learning
-          - AI for Physics
-          - Statistical & Nonequilibrium Physics
-          - Learning & Memory
-      - name: Hobbies
-        keywords:
-          - Running
-          - Coffee brewing
-          - Whisky
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Running 🏃🏻, Coffee brewing ☕️, Whisky 🥃; instagram <a href="https://www.instagram.com/kdkyum531/"><i class="fab fa-instagram"></i></a>
