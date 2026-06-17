@@ -1,0 +1,15 @@
+# This file contains the social media links and contact info of the author.
+# Socials are displayed (e.g. in the footer / search) in the order defined here.
+# Plugin docs: https://github.com/george-gca/jekyll-socials
+#
+# Note: the visible social row on the homepage is the custom button row in
+# `_pages/about.md` (its front matter sets `social: false`). The entries below
+# drive the footer icons, site search, and Open Graph / Schema.org metadata.
+email: dong-kyum.kim@mpi-sp.org # your email address
+scholar_userid: -pvD9xUAAAAJ # your Google Scholar ID
+github_username: kdkyum # your GitHub username
+linkedin_username: kdkyum # your LinkedIn handle
+x_username: kdkyum531 # your X (Twitter) handle
+instagram_id: kdkyum531 # your Instagram handle
+cv_pdf: /assets/pdf/CV_DKK.pdf # path to your CV PDF file
+rss_icon: false # set to true to show the RSS icon
