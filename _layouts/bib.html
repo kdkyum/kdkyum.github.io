@@ -20,6 +20,10 @@
             <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
+        {%- if entry.award %}
+          <br>
+          <span class="award">{{ entry.award }}</span>
+        {%- endif -%}
         </div>
 
         <!-- Entry bib key -->

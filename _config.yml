@@ -264,6 +264,7 @@ filtered_bibtex_keywords:
     abbr,
     abstract,
     arxiv,
+    award,
     bibtex_show,
     html,
     pdf,
