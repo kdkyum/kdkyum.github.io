@@ -7,6 +7,7 @@
   abstract    = {Memory formation is fundamental to intelligence, yet whether deep neural networks preserve identifiable memory traces—analogous to biological memory units—remains an open question. This work introduces a geometric framework to identify such "AI engrams," by formalizing the neuroscientific criteria of specificity, reactivation, sufficiency, and necessity into a constrained inverse problem. We derive a closed-form estimator that isolates individual memory traces from globally entangled parameters. Theoretical analysis reveals that this biologically-derived solution corresponds to a natural gradient update on the parameter manifold. AI engrams enable surgical manipulation of learned knowledge: any subset of memories can be composed or erased through linear arithmetic, without iterative optimization. Experiments ranging from simple MLPs to LLMs demonstrate the causal validity and substantial scalability of AI engrams. Together, these results bridge theories of biological memory and artificial representation learning, offering geometric insight into how deep networks simultaneously support functional specificity within distributed storage.},
   booktitle   = {Proceedings of the 43rd International Conference on Machine Learning},
   award       = {Oral},
+  stat        = {26.6% acceptance, Oral top 0.7%},
   arxiv       = {2606.14997},
   selected    = {true},
   bibtex_show = {true}
@@ -20,6 +21,7 @@
   abstract    = {The reversal curse—a language model's inability to infer an unseen fact "B is A" from a learned fact "A is B"—is widely considered a fundamental limitation. We show that this is not an inherent failure but an artifact of how models encode knowledge. Our results demonstrate that training from scratch on synthetic relational knowledge graphs leads to the emergence of a bilinear relational structure within the models' hidden representations. This structure alleviates the reversal curse and facilitates inference of unseen reverse facts. Crucially, this bilinear geometry is foundational for consistent model editing: updates to a single fact propagate correctly to its reverse and logically dependent relations. In contrast, models lacking this representation suffer from the reversal curse and fail to generalize model edits, leading to logical inconsistencies. Our results establish that training on a relational knowledge dataset induces the emergence of bilinear internal representations, which in turn support language models in behaving in a logically consistent manner after editing. This suggests that the efficacy of language model editing depends not only on the choice of algorithm but on the underlying representational geometry of the knowledge itself.},
   url         = {https://openreview.net/forum?id=pdNaYcApbz},
   arxiv       = {2509.21993},
+  stat        = {27.0% acceptance},
   booktitle   = {The Fourteenth International Conference on Learning Representations},
   selected    = {true},
   bibtex_show = {true},
@@ -35,6 +37,7 @@
   abstract    = {Large language models trained on web-scale data can memorize private or sensitive knowledge, raising significant privacy risks. Although some unlearning methods mitigate these risks, they remain vulnerable to "relearning" during subsequent training, allowing a substantial portion of forgotten knowledge to resurface. In this paper, we show that widely used unlearning methods cause shallow alignment: instead of faithfully erasing target knowledge, they generate spurious unlearning neurons that amplify negative influence to hide it. To overcome this limitation, we introduce Ssiuu, a new class of unlearning methods that employs attribution-guided regularization to prevent spurious negative influence and faithfully remove target knowledge. Experimental results confirm that our method reliably erases target knowledge and outperforms strong baselines across two practical retraining scenarios: (1) adversarial injection of private data, and (2) benign attack using an instruction-following benchmark. Our findings highlight the necessity of robust and faithful unlearning methods for safe deployment of language models.},
   url         = {https://openreview.net/forum?id=z2zFk9jYpw},
   arxiv       = {2509.22263},
+  stat        = {27.0% acceptance},
   booktitle   = {The Fourteenth International Conference on Learning Representations},
   selected    = {true},
   bibtex_show = {true}
@@ -98,6 +101,8 @@
   abstract    = {Music exists in almost every society, has universal acoustic features, and is processed by distinct neural circuits in humans even with no experience of musical training. However, it remains unclear how these innate characteristics emerge and what functions they serve. Here, using an artificial deep neural network that models the auditory information processing of the brain, we show that units tuned to music can spontaneously emerge by learning natural sound detection, even without learning music. The music-selective units encoded the temporal structure of music in multiple timescales, following the population-level response characteristics observed in the brain. We found that the process of generalization is critical for the emergence of music-selectivity and that music-selectivity can work as a functional basis for the generalization of natural sound, thereby elucidating its origin. These findings suggest that evolutionary adaptation to process natural sounds can provide an initial blueprint for our sense of music.},
   url         = {https://doi.org/10.1038/s41467-023-44516-0},
   bibtex_show = {true},
+  selected    = {true},
+  stat        = {IF 15.7},
   journal     = {Nature Communications}
 }
 
@@ -108,6 +113,7 @@
   year        = {2023},
   abstract    = {The hippocampus plays a critical role in learning, memory, and spatial representation, processes that depend on the NMDA receptor (NMDAR). Here we build on recent findings comparing deep learning models to the hippocampus and develop a new nonlinear activation function based on NMDAR dynamics. We find that NMDAR-like nonlinearity is essential for shifting short-term working memory into long-term reference memory in transformers, thus enhancing a process that resembles memory consolidation in the mammalian brain. We design a navigation task assessing these two memory functions and show that manipulating the activation function (i.e., mimicking the Mg$^{2+}$-gating of NMDAR) disrupts long-term memory processes. Our experiments suggest that place cell-like functions and reference memory reside in the feed-forward network layer of transformers and that nonlinearity drives these processes. We discuss the role of NMDAR-like nonlinearity in establishing this striking resemblance between transformer architecture and hippocampal spatial representation.},
   url         = {https://openreview.net/forum?id=vKpVJxplmB},
+  stat        = {26.1% acceptance},
   booktitle   = {Thirty-seventh Conference on Neural Information Processing Systems},
   selected    = {true},
   bibtex_show = {true}
@@ -123,6 +129,7 @@
   abstract    = { While huge strides have recently been made in language-based machine learning, the ability of artificial systems to comprehend the sequences that comprise animal behavior has been lagging behind. In contrast, humans instinctively recognize behaviors by finding similarities in behavioral sequences. Here, we develop an unsupervised behavior-mapping framework, SUBTLE (spectrogram-UMAP-based temporal-link embedding), to capture comparable behavioral repertoires from 3D action skeletons. To find the best embedding method, we devise a temporal proximity index (TPI) as a new metric to gauge temporal representation in the behavioral embedding space. The method achieves the best TPI score compared to current embedding strategies. Its spectrogram-based UMAP clustering not only identifies subtle inter-group differences but also matches human-annotated labels. SUBTLE framework automates the tasks of both identifying behavioral repertoires like walking, grooming, standing, and rearing, and profiling individual behavior signatures like subtle inter-group differences by age. SUBTLE highlights the importance of temporal representation in the behavioral embedding space for human-like behavioral categorization.},
   url         = {https://link.springer.com/article/10.1007/s11263-024-02072-0},
   journal     = {International Journal of Computer Vision},
+  stat        = {IF 9.3},
   bibtex_show = {true}
 }
 
@@ -136,6 +143,7 @@
   issue       = {1},
   pages       = {013194},
   numpages    = {14},
+  stat        = {IF 4.2},
   year        = {2023},
   month       = {Mar},
   publisher   = {American Physical Society},
@@ -181,6 +189,7 @@
   issue       = {2},
   pages       = {023051},
   numpages    = {7},
+  stat        = {IF 4.2},
   year        = {2022},
   month       = {Apr},
   publisher   = {American Physical Society},
@@ -200,6 +209,7 @@
   issue       = {3},
   pages       = {033094},
   numpages    = {9},
+  stat        = {IF 4.2},
   year        = {2022},
   month       = {Aug},
   publisher   = {American Physical Society},
@@ -219,6 +229,7 @@
   issue       = {2},
   pages       = {L022002},
   numpages    = {6},
+  stat        = {IF 4.2},
   year        = {2021},
   month       = {Apr},
   publisher   = {American Physical Society},
@@ -246,6 +257,7 @@
   doi         = {10.1103/PhysRevLett.125.140604},
   url         = {https://link.aps.org/doi/10.1103/PhysRevLett.125.140604},
   arxiv       = {2003.04166},
+  stat        = {IF 9.0},
   code        = {https://github.com/kdkyum/neep},
   abstract    = {This Letter presents a neural estimator for entropy production (NEEP), that estimates entropy production (EP) from trajectories of relevant variables without detailed information on the system dynamics. For steady state, we rigorously prove that the estimator, which can be built up from different choices of deep neural networks, provides stochastic EP by optimizing the objective function proposed here. We verify the NEEP with the stochastic processes of the bead spring and discrete flashing ratchet models and also demonstrate that our method is applicable to high-dimensional data and can provide coarse-grained EP for Markov systems with unobservable states.},
   selected    = {true},

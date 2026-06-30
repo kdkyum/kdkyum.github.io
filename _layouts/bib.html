@@ -120,7 +120,7 @@
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entryyear }}{%- endcapture -%}
           <div class="periodical">
-            {{ periodical | strip }}{%- if entry.award %}<span class="award">{{ entry.award }}</span>{%- endif %}
+            {{ periodical | strip }}{%- if entry.award %}<span class="award">{{ entry.award }}</span>{%- endif %}{%- if entry.stat %}<span class="pub-stat">{{ entry.stat }}</span>{%- endif %}
           </div>
         {%- endif %}
         

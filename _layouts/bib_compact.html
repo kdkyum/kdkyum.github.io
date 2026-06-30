@@ -34,7 +34,7 @@
           {%- endfor -%}
           </div>
           <div class="periodical">
-            <span class="venue">{{ entry.abbr }}</span> {{ entry.year }}{%- if entry.award %}<span class="award">{{ entry.award }}</span>{%- endif %}
+            <span class="venue">{{ entry.abbr }}</span> {{ entry.year }}{%- if entry.award %}<span class="award">{{ entry.award }}</span>{%- endif %}{%- if entry.stat %}<span class="pub-stat">{{ entry.stat }}</span>{%- endif %}
           </div>
           <div class="links">
           {%- if entry.abstract %}

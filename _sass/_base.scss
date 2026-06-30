@@ -528,6 +528,12 @@ footer.sticky-bottom {
         color: var(--global-theme-color);
         font-weight: 600;
       }
+      .pub-stat {
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        color: var(--global-text-color-light);
+        white-space: nowrap;
+      }
       .title {
         font-weight: bolder;
       }
