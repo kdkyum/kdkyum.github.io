@@ -11,15 +11,13 @@ profile:
   address: >
     <p style="font-size: 0.8rem;">dong-kyum.kim [at] mpi-sp.org</p>
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 
 canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
-
-**Recent:** *AI Engram*, on identifying memory traces in neural networks, received an **Oral at ICML 2026** (top 0.7% of submissions).
 
 I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I was **trained as a physicist**, earning my Ph.D. from the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/), applying deep learning to nonequilibrium statistical physics.
 
