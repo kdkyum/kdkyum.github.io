@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: AI researcher interested in how AI stores & updates information
+subtitle: Physicist passionate about how AI systems store, retrieve & update knowledge
 
 profile:
   align: right
@@ -19,11 +19,11 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
-I am a postdoc at [MPI for Security and Privacy](https://www.mpi-sp.org). I received my Ph.D. in Physics from KAIST, where I applied AI to problems in nonequilibirium statistical physics.
+I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany. I was **trained as a physicist**, earning my Ph.D. from the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/), where I used deep learning to study nonequilibrium statistical physics.
 
-I study how large language models store and update knowledge, and what fails when we try to edit or erase it. My goal is to make AI systems safer and more controllable by understanding their internal representations. I work across **interpretability**, **model editing**, and **machine unlearning**.
+I am passionate about how AI systems store, retrieve, and update knowledge. Today I study what happens inside large language models — and what breaks when we edit or erase what they know — across **interpretability**, **model editing**, and **machine unlearning**. What makes my perspective unusual is where it comes from: I trained in a statistical-physics and complex-networks lab, using neural networks to probe nonequilibrium systems (learning entropy production, feedback-controlling stochastic ratchets, and inferring dissipation from data), and I have collaborated closely with neuroscientists on how memory forms in the brain — from brain-inspired architectures to memory *engrams* in neural networks. I bring this **physics-and-neuroscience lens** to the study of modern AI.
 
-Currently, I am on the job market and open to opportunities and collaborations. Feel free to browse my [publications](/publications/) or my [CV](/assets/pdf/CV_DKK.pdf). I’m always happy to connect.
+I am currently **on the job market**, open to both academic and industry positions. Feel free to reach out, or browse my [publications](/publications/).
 
 <p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
 <!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->

@@ -524,6 +524,10 @@ footer.sticky-bottom {
         border: 1px solid var(--global-theme-color);
         border-radius: 3px;
       }
+      .venue {
+        color: var(--global-theme-color);
+        font-weight: 600;
+      }
       .title {
         font-weight: bolder;
       }
@@ -599,6 +603,9 @@ footer.sticky-bottom {
         border-color: var(--global-text-color);
       }
     }
+  }
+  &.compact-pubs ol.bibliography li {
+    margin-bottom: 0.75rem;
   }
   .load-more {
     margin-top: 1rem;
