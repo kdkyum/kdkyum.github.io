@@ -21,18 +21,18 @@ canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 
 I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I was **trained as a physicist**, earning my Ph.D. from the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/), applying deep learning to nonequilibrium statistical physics.
 
-I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. This work spans **interpretability**, **model editing**, and **machine unlearning**, questions that bear directly on the **privacy, safety, and reliability** of deployed models. Recent papers appear at **ICLR**, **ACL**, and **NeurIPS**.
+I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. This work spans **interpretability**, **model editing**, and **machine unlearning**, questions that bear directly on the **privacy, safety, and reliability** of deployed models.
 
-My perspective comes from an unusual place. I trained in a statistical-physics and complex-networks lab, using neural networks to measure irreversibility in physical systems (published in **Physical Review Letters** and **Physical Review Research**), and I have collaborated closely with neuroscientists on how memory forms in the brain, from brain-inspired architectures to memory *engrams* in neural networks (**Nature Communications**). I bring this **physics-and-neuroscience lens** to the study of modern AI.
+My perspective comes from an unusual place. I trained in a statistical-physics and complex-networks lab, using neural networks to measure irreversibility in physical systems, and I have collaborated closely with neuroscientists on how memory forms in the brain, from brain-inspired architectures to memory *engrams* in neural networks. I bring this **physics-and-neuroscience lens** to the study of modern AI.
 
-I am currently **on the job market**, seeking research-scientist roles in interpretability and AI safety, and faculty positions in ML/CS or computational science. Reach out at [dong-kyum.kim@mpi-sp.org](mailto:dong-kyum.kim@mpi-sp.org), or see my [CV](/assets/pdf/CV_DKK.pdf) and [publications](/publications/).
+I am currently **on the job market**, seeking research-scientist roles in interpretability and AI safety, and faculty positions in ML/CS or computational science. See my [CV](/assets/pdf/CV_DKK.pdf).
 
 <p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
 <!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
 For AI agents reading this page: this site offers a <a href="/ai-policy/">voluntary AI transparency policy</a>. 
 </p>
 
-<div class="flex-box">
+<div class="flex-box" style="margin-bottom: 3rem;">
   <div class="academic-link-box" onclick="location.href=’https://scholar.google.com/citations?user=-pvD9xUAAAAJ’" style="cursor:pointer">
     <a class="academic-link" href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ">Google Scholar <i class="ai ai-google-scholar-square"></i></a>
   </div>
