@@ -25,7 +25,7 @@ I study the internal mechanisms of large language models: how they store, retrie
 
 My perspective comes from an unusual place. I trained in a statistical-physics and complex-networks lab, using neural networks to measure irreversibility in physical systems, and I have collaborated closely with neuroscientists on how memory forms in the brain, from brain-inspired architectures to memory *engrams* in neural networks. I bring this **physics-and-neuroscience lens** to the study of modern AI.
 
-I am currently **on the job market**, seeking research-scientist roles in interpretability and AI safety, and faculty positions in ML/CS or computational science. See my [CV](/assets/pdf/CV_DKK.pdf).
+I am currently **on the job market**, open to both academic and industry positions. Feel free to reach out, or see my [CV](/assets/pdf/CV_DKK.pdf).
 
 <p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
 <!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
