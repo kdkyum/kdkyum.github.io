@@ -6,7 +6,7 @@ subtitle: Physicist studying how AI systems store, retrieve, and update knowledg
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p style="font-size: 0.8rem;">dong-kyum.kim [at] mpi-sp.org</p>
