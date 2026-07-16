@@ -23,7 +23,7 @@ I am a postdoctoral researcher at the [Max Planck Institute for Security and Pri
 
 I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. This work spans **interpretability**, **model editing**, and **machine unlearning**, questions that bear directly on the **privacy, safety, and reliability** of deployed models.
 
-My work is often guided by physics principles and observations from neuroscience. My training in statistical physics and complex networks taught me to search for simple mechanisms behind complex behavior, while collaborations with neuroscientists showed me how biological learning and memory can inspire new questions about artificial systems. Together, these perspectives shape both the questions I ask and the methods I use in AI research.
+My work is often guided by physics principles and observations from neuroscience. My training in statistical physics and complex networks taught me to search for simple mechanisms behind complex behavior, while collaborations with neuroscientists showed me how biological learning and memory can inspire new questions about artificial systems. This background leads me to seek mechanistic explanations for the behavior of AI.
 
 I am currently **on the job market**, open to both academic and industry positions. Feel free to reach out, or see my [CV](/assets/pdf/CV_DKK.pdf).
 
