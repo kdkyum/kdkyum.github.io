@@ -19,13 +19,13 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
-I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I was **trained as a physicist**, earning my Ph.D. from the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/), applying deep learning to nonequilibrium statistical physics.
+I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I earned my Ph.D. in physics at the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under the supervision of [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/), using deep learning to study nonequilibrium statistical physics.
 
-I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. This work spans **interpretability**, **model editing**, and **machine unlearning**, questions that bear directly on the **privacy, safety, and reliability** of deployed models.
+I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. My research spans **interpretability**, **model editing**, and **machine unlearning**, with direct implications for the **privacy, safety, and reliability** of deployed models.
 
-My work is often guided by physics principles and observations from neuroscience. My training in statistical physics and complex networks taught me to search for simple mechanisms behind complex behavior, while collaborations with neuroscientists showed me how biological learning and memory can inspire new questions about artificial systems. This background leads me to seek mechanistic explanations for the behavior of AI.
+My work is often guided by principles from physics and observations from neuroscience. My training in physics taught me to look for simple mechanisms underlying complex behavior, while collaborations with neuroscientists led me to ask how biological learning and memory can inform our understanding of artificial systems.
 
-I am currently **on the job market**, open to both academic and industry positions. Feel free to reach out, or see my [CV](/assets/pdf/CV_DKK.pdf).
+I am currently **on the job market** and seeking research positions in academia and industry. Feel free to reach out or see my [CV](/assets/pdf/CV_DKK.pdf).
 
 <p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
 <!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
