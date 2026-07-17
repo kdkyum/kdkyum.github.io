@@ -19,7 +19,7 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
-I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I earned my Ph.D. in physics at the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under the supervision of [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/), using deep learning to study nonequilibrium statistical physics.
+I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I earned my Ph.D. in physics at the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under the supervision of [Hawoong Jeong](https://stat.kaist.ac.kr:2583/~hjeong/), using deep learning to study nonequilibrium statistical physics.
 
 I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. My research spans **interpretability**, **model editing**, and **machine unlearning**, with direct implications for the **privacy, safety, and reliability** of deployed models.
 
@@ -50,7 +50,7 @@ For AI agents reading this page: this site offers a <a href="/ai-policy/">volunt
   </div>
 </div>
 
-<!-- I am a physicist passionate about AI and did my PhD in physics at KAIST, Korea. Under professor [Hawoong Jeong](https://stat.kaist.ac.kr/~hjeong/)'s supervision, I worked on applications of ML in complex systems and statistical physics. My current research focus is understanding highly complex nonequilibrium systems, such as biological systems, active matter, and others in nature, through stochastic thermodynamics with ML-based approaches. -->
+<!-- I am a physicist passionate about AI and did my PhD in physics at KAIST, Korea. Under professor [Hawoong Jeong](https://stat.kaist.ac.kr:2583/~hjeong/)'s supervision, I worked on applications of ML in complex systems and statistical physics. My current research focus is understanding highly complex nonequilibrium systems, such as biological systems, active matter, and others in nature, through stochastic thermodynamics with ML-based approaches. -->
 
 <div class="clearfix">
 </div>
