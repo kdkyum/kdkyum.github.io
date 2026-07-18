@@ -44,6 +44,20 @@
 % Tight lists
 \setlist[itemize]{nosep, leftmargin=24pt, topsep=2pt}
 
+% Compact dated entries for teaching and talks
+\newcommand{\cvdatedentry}[3]{%
+    \noindent
+    \parbox[t]{0.75\textwidth}{%
+        \raggedright\textbf{#1}\\[-1pt]
+        {\small #2}\par
+    }%
+    \hfill
+    \parbox[t]{0.22\textwidth}{%
+        \raggedleft{\small #3}\par
+    }%
+    \par\vspace{2pt}
+}
+
 \begin{document}
 
 % === HEADER ===
@@ -176,6 +190,69 @@ attention}.''
 
 \end{enumerate}
 
+% === TEACHING ===
+\section{Teaching Experience}
+
+\cvdatedentry{Computational Physics Course, KAIST (Daejeon, Korea)}
+    {\textit{``Deep learning applications: Nonequilibrium statistical physics study using AI''}}
+    {May 1, 2023}
+
+\cvdatedentry{Computational Physics Course, KAIST (Daejeon, Korea)}
+    {\textit{``Deep Learning Introduction''}}
+    {Apr. 24, 2023}
+
+\cvdatedentry{SNU Physics and AI Winter School (Seoul, Korea)}
+    {\textit{``Exploring Irreversibility via Machine Learning''}}
+    {Feb. 24, 2022}
+
+\cvdatedentry{General Physics II, KAIST (Korea)}
+    {Teaching Assistant}
+    {Fall 2016; Spring 2017}
+
+% === TALKS ===
+\section{Talks}
+
+\cvdatedentry{\href{https://sites.google.com/view/cxrex/home}{CREx \#23} (Online)}
+    {\textit{``Bilinear relational structure fixes reversal curse and enables consistent model editing''}}
+    {Feb. 24, 2026}
+
+\cvdatedentry{IBS Winter School on AI-Boosted Basic Science (Daejeon, Korea)}
+    {\textit{``Resemblances between Transformer's Nonlinearity and NMDA Receptor Dynamics''}}
+    {Dec. 13, 2022}
+
+\cvdatedentry{KIAS CAINS Summer Workshop (Jeju, Korea)}
+    {\textit{``Working and reference memory in transformers on a navigation task''}}
+    {Sep. 2, 2022}
+
+\cvdatedentry{KIAS Nonequilibrium Statistical Physics of Complex Systems (Seoul, Korea)}
+    {\textit{``Deep reinforcement learning for optimal mechanism in active Brownian particles''}}
+    {Jul. 25, 2022}
+
+\cvdatedentry{APCTP Workshop for Physics and Machine Learning (Jeju, Korea)}
+    {\textit{``Exploring optimal mechanisms in active Brownian particles via deep reinforcement learning''}}
+    {Nov. 26, 2021}
+
+\cvdatedentry{Seoul National University Statistical Physics Seminar (Online)}
+    {\textit{``Methods of estimating entropy production''}}
+    {Feb. 1, 2021}
+
+\pagebreak[4]
+\cvdatedentry{Korean Physical Society Fall Meeting (Online)}
+    {\textit{``Deep reinforcement learning for feedback-controlled flashing ratchets''}}
+    {Nov. 6, 2020}
+
+\cvdatedentry{NetSci2020 (Online)}
+    {\textit{``Discovering wiring patterns of neural networks via backboning''}}
+    {Sep. 22, 2020}
+
+\cvdatedentry{Korean Physical Society Spring Meeting (Online)}
+    {\textit{``Neural estimator for entropy production''}}
+    {Jul. 13, 2020}
+
+\cvdatedentry{Quantifying Success Satellite at NetSci2019 (Burlington, Vermont, USA)}
+    {\textit{``Quantifying Individual Reputation in Large-scale Historical Documents''}}
+    {May 27, 2019}
+
 % === TECHNICAL SKILLS ===
 \section{Technical Skills}
 
@@ -183,13 +260,13 @@ attention}.''
     \item \textbf{Daily driver}: Currently running multiple Claude Code sessions (Max plan, \$200/mo) via tmux as my
 primary research workflow.
     \item \textbf{ML/Interp}: PyTorch, JAX, TransformerLens, \& nnsight.
-    \item \textbf{Infrastructure}: Distributed training training \& inference (Slurm system with hundreds of H100s),
+    \item \textbf{Infrastructure}: Distributed training \& inference (Slurm system with hundreds of H100s),
 large-scale data pipelines
 \end{itemize}
 
 % === REVIEWING ===
 \section{Academic Service}
-\textbf{Reviewer}: ICML 2026 Workshop Mechanistic Interpretability, ICML 2026 (Received Gold Reviewer Award), ICLR 2026,
+\textbf{Reviewer}: ICML 2026 Workshop on Mechanistic Interpretability, ICML 2026 (Received Gold Reviewer Award), ICLR 2026,
 NeurIPS 2025, ICML 2025 Workshop World Models, ICLR 2025 Workshop Re-Align, NeurIPS 2024 Workshop Behavioral ML, ICML
 2024 Workshop LLMs and Cognition.
 
@@ -197,26 +274,51 @@ NeurIPS 2025, ICML 2025 Workshop World Models, ICLR 2025 Workshop Re-Align, Neur
 \section{Awards}
 \textbf{Pre-doctoral Fellow of Physics}, KAIST \hfill 2021
 
+% === PRESS ===
+\section{In the Press}
+\begin{itemize}[itemsep=2pt]
+    \item \textbf{Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity}
+    (\textit{NeurIPS} 2023):
+    \href{https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000738/selectBoardArticle.do?nttId=24264\&pageIndex=1\&searchCnd=\&searchWrd=}{IBS Research News (English)},
+    \href{https://www.ibs.re.kr/cop/bbs/BBSMSTR_000000000735/selectBoardArticle.do?nttId=24270\&pageIndex=1\&searchCnd=\&searchWrd=}{IBS Research News (Korean)},
+    \href{http://m.dongascience.com/news.php?idx=62694}{Donga Science}, and
+    \href{https://www.eurekalert.org/news-releases/1029300}{EurekAlert!}.
+
+    \item \textbf{Learning Entropy Production via Neural Networks}
+    (\textit{Phys.\ Rev.\ Lett.} \textbf{125}, 140604, 2020):
+    \href{https://webzine.kps.or.kr/?p=5_view\&idx=16495/}{Physics and High Technology}.
+\end{itemize}
+
 % === REFERENCES ===
 \section{References}
 \begin{multicols}{2}
-\begin{description}[leftmargin=0pt,topsep=0pt]
+\begin{description}[leftmargin=0pt,topsep=0pt,itemsep=5pt,parsep=0pt]
     \item[\href{https://www.mpi-sp.org/cha}{Meeyoung Cha}] \hfill \\
     Scientific Director \\
     Data Science for Humanity Group, MPI-SP \\
-    \faEnvelope \space mia.cha@mpi-sp.org \\
+    \href{mailto:mia.cha@mpi-sp.org}{\faEnvelope \space mia.cha@mpi-sp.org}
 
     \item[\href{https://yongjoobaek.wordpress.com}{Yongjoo Baek}] \hfill \\
     Professor \\
     Department of Physics \& Astronomy, SNU \\
-    \faEnvelope \space y.baek@snu.ac.kr
+    \href{mailto:y.baek@snu.ac.kr}{\faEnvelope \space y.baek@snu.ac.kr}
+
+    \item[\href{https://scholar.google.co.kr/citations?user=h1QXLx0AAAAJ\&hl=en}{Junghyo Jo}] \hfill \\
+    Professor \\
+    Department of Physics Education, SNU \\
+    \href{mailto:jojunghyo@snu.ac.kr}{\faEnvelope \space jojunghyo@snu.ac.kr}
 \end{description}
 \columnbreak
-\begin{description}[leftmargin=0pt,topsep=0pt]
+\begin{description}[leftmargin=0pt,topsep=0pt,itemsep=5pt,parsep=0pt]
     \item[\href{https://stat.kaist.ac.kr:2583/~hjeong/}{Hawoong Jeong}] \hfill \\
     Professor \\
     Department of Physics, KAIST \\
-    \faEnvelope \space hjeong@kaist.edu
+    \href{mailto:hjeong@kaist.edu}{\faEnvelope \space hjeong@kaist.edu}
+
+    \item[\href{https://centers.ibs.re.kr/html/glia_en/people/people_0201.html}{C.\ Justin Lee}] \hfill \\
+    Director \\
+    Center for Cognition and Sociality, IBS \\
+    \href{mailto:cjl@ibs.re.kr}{\faEnvelope \space cjl@ibs.re.kr}
 \end{description}
 \end{multicols}
 
