@@ -32,6 +32,23 @@ a, table.table a {
   }
 }
 
+// Keep inline news links visible even when their text is italicized.
+.news td a {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+
+  em {
+    color: inherit;
+  }
+
+  &:hover {
+    color: var(--global-hover-color);
+    text-decoration-thickness: 2px;
+  }
+}
+
 figure, img {
   max-width: 90vw;
 }
