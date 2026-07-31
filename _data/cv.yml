@@ -1,3 +1,7 @@
+- title: Research Interests
+  contents: >-
+    My research combines AI, physics, and neuroscience to uncover how large language models learn, store, and revise knowledge. Using representation geometry and causal interventions, I study memory, model editing, and machine unlearning, seeking simple mechanisms behind complex behavior and testable hypotheses inspired by biological memory. I aim to extend this approach to continual reinforcement learning by identifying how rewards preserve existing capabilities and selectively consolidate experience, with the goal of building safer, more reliable, and more efficient AI systems.
+
 - title: Education
   type: time_table
   contents:
@@ -32,11 +36,6 @@
         - Collaborated with <a href="https://www.linkedin.com/in/danielyounghokim/">Daniel Kim</a> (Senior Data Scientist).
         - Improved anomaly image classification tasks via distributed multi-GPU training methods of Keras and Spark.
         - Implemented a distributed image searching framework to detect similar patterns in images through Elasticsearch.
-
-- title: Research Interests
-  type: list
-  contents:
-    - Artificial Intelligence (AI), Deep Learning, Machine Learning, Interpretable AI, Mechanistic Interpretability, Large Language Models (LLMs), Data Science, AI for Physics, Statistical Physics, Nonequilibrium Physics, Neuroscience, Brain-Inspired AI, Learning & Memory
 
 - title: Other Interests
   type: list
