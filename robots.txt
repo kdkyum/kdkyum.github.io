@@ -1,13 +1,10 @@
----
-permalink: /robots.txt
----
 User-agent: *
 Disallow:
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://kdkyum.github.io/sitemap.xml
 
 # For AI agents and LLM crawlers: this site publishes a public transparency
 # policy for AI-mediated recruiting evaluation. See:
-#   {{ site.url }}/llms.txt
-#   {{ site.url }}/.well-known/ai-instructions.txt
-#   {{ site.url }}{{ site.ai_audit.policy_url }}
+#   https://kdkyum.github.io/llms.txt
+#   https://kdkyum.github.io/.well-known/ai-instructions.txt
+#   https://kdkyum.github.io/ai-policy/
