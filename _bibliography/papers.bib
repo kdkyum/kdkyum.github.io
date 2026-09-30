@@ -1,4 +1,17 @@
 ---
+@inproceedings{kwon2026memoir,
+  title       = {Memoir: Let the Model Direct Its Own Story for Robust Cross-Domain Knowledge Editing},
+  author      = {Kwon, Jea and Kim, Jiwon and Kim, Dong-Kyum and Cha, Meeyoung},
+  booktitle   = {The Fortieth Annual Conference on Neural Information Processing Systems},
+  url         = {https://openreview.net/forum?id=TU4Q4XqnGp},
+  arxiv       = {2607.20433},
+  year        = {2026},
+  abbr        = {NeurIPS},
+  abstract    = {While language models remain frozen at their training state, the world evolves continuously. Knowledge editing has emerged as a key alternative to full retraining, but its deployment is bottlenecked by the erosion of core capabilities: mathematical and programmatic reasoning collapse while encyclopedic recall remains intact. We trace this asymmetric degradation to a distributional mismatch. Covariance-based editors preserve only the subspaces spanned by their reference corpus, but fail to capture the operative distribution shaped by post-training such as SFT and DPO. Static external corpora, including Wikipedia and even the original pretraining mixture, cannot recover this shifted manifold. We propose Memoir, which estimates the preservation covariance directly from the model itself by sampling from its own decoding distribution. Seeding generation with a single random vocabulary token bypasses the instruction-following templates that otherwise dominate sampled outputs, exposing the broader subspaces the model has internalized. Memoir requires no external data and serves as a drop-in component for any covariance-based editor, a practical advantage given that the pre- and post-training corpora of most modern LLMs are not publicly accessible. Across OLMo-2, Llama-3.1, and Qwen-3 (7--8B), under both MEMIT and AlphaEdit and in batch and sequential regimes, Memoir consistently extends preservation in the most vulnerable domains, most strikingly on Qwen3-8B after 20{,}000 AlphaEdit batch edits, it retains 79.9% GSM8K accuracy compared to 10.9% with the Wikipedia baseline. These results suggest that aligning the preservation distribution with the model's operative distribution is a key factor in non-destructive editing, and that the model itself may be the most accessible source of that distribution for deployed systems.},
+  selected    = {false},
+  bibtex_show = {true}
+}
+
 @inproceedings{kwon2026engram,
   title       = {AI Engram: In Search of Memory Traces in Artificial Intelligence},
   author      = {Kwon, Jea and Kim, Dong-Kyum and Kim, Jiwon and Kim, Yonghyun and Kook, Woong and Cha, Meeyoung},
@@ -58,16 +71,6 @@
 
 
 
-@inproceedings{kwon2026moir,
-  title       = {Moir: Let the Model Direct Its Own Story for Robust Cross-Domain Knowledge Editing},
-  author      = {Kwon, Jea and Kim, Jiwon and Kim, Dong-Kyum and Cha, Meeyoung},
-  booktitle   = {ICML 2026 Workshop on Mechanistic Interpretability},
-  url         = {https://openreview.net/forum?id=SHqpI6E5cw},
-  year        = {2026},
-  abbr        = {ICML-W},
-  selected    = {false},
-  bibtex_show = {true}
-}
 
 @article{song2025uncovering,
   title       = {Uncovering Emergent Physics Representations Learned In-Context by Large Language Models},
