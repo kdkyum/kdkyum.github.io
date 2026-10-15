@@ -1,13 +1,13 @@
 ---
 @inproceedings{kwon2026memoir,
-  title       = {Memoir: Let the Model Direct Its Own Story for Robust Cross-Domain Knowledge Editing},
+  title       = {Moir: Let the Model Direct Its Own Story for Robust Cross-Domain Knowledge Editing},
   author      = {Kwon, Jea and Kim, Jiwon and Kim, Dong-Kyum and Cha, Meeyoung},
   booktitle   = {The Fortieth Annual Conference on Neural Information Processing Systems},
   url         = {https://openreview.net/forum?id=TU4Q4XqnGp},
   arxiv       = {2607.20433},
   year        = {2026},
   abbr        = {NeurIPS},
-  abstract    = {While language models remain frozen at their training state, the world evolves continuously. Knowledge editing has emerged as a key alternative to full retraining, but its deployment is bottlenecked by the erosion of core capabilities: mathematical and programmatic reasoning collapse while encyclopedic recall remains intact. We trace this asymmetric degradation to a distributional mismatch. Covariance-based editors preserve only the subspaces spanned by their reference corpus, but fail to capture the operative distribution shaped by post-training such as SFT and DPO. Static external corpora, including Wikipedia and even the original pretraining mixture, cannot recover this shifted manifold. We propose Memoir, which estimates the preservation covariance directly from the model itself by sampling from its own decoding distribution. Seeding generation with a single random vocabulary token bypasses the instruction-following templates that otherwise dominate sampled outputs, exposing the broader subspaces the model has internalized. Memoir requires no external data and serves as a drop-in component for any covariance-based editor, a practical advantage given that the pre- and post-training corpora of most modern LLMs are not publicly accessible. Across OLMo-2, Llama-3.1, and Qwen-3 (7--8B), under both MEMIT and AlphaEdit and in batch and sequential regimes, Memoir consistently extends preservation in the most vulnerable domains, most strikingly on Qwen3-8B after 20{,}000 AlphaEdit batch edits, it retains 79.9% GSM8K accuracy compared to 10.9% with the Wikipedia baseline. These results suggest that aligning the preservation distribution with the model's operative distribution is a key factor in non-destructive editing, and that the model itself may be the most accessible source of that distribution for deployed systems.},
+  abstract    = {While language models remain frozen at their training state, the world evolves continuously. Knowledge editing has emerged as a key alternative to full retraining, but its deployment is bottlenecked by the erosion of core capabilities: mathematical and programmatic reasoning collapse while encyclopedic recall remains intact. We trace this asymmetric degradation to a distributional mismatch. Covariance-based editors preserve only the subspaces spanned by their reference corpus, but fail to capture the operative distribution shaped by post-training such as SFT and DPO. Static external corpora, including Wikipedia and even the original pretraining mixture, cannot recover this shifted manifold. We propose Moir, which estimates the preservation covariance directly from the model itself by sampling from its own decoding distribution. Seeding generation with a single random vocabulary token bypasses the instruction-following templates that otherwise dominate sampled outputs, exposing the broader subspaces the model has internalized. Moir requires no external data and serves as a drop-in component for any covariance-based editor, a practical advantage given that the pre- and post-training corpora of most modern LLMs are not publicly accessible. Across OLMo-2, Llama-3.1, and Qwen-3 (7--8B), under both MEMIT and AlphaEdit and in batch and sequential regimes, Moir consistently extends preservation in the most vulnerable domains, most strikingly on Qwen3-8B after 20{,}000 AlphaEdit batch edits, it retains 79.9% GSM8K accuracy compared to 10.9% with the Wikipedia baseline. These results suggest that aligning the preservation distribution with the model's operative distribution is a key factor in non-destructive editing, and that the model itself may be the most accessible source of that distribution for deployed systems.},
   selected    = {false},
   bibtex_show = {true}
 }
@@ -105,7 +105,7 @@
   abstract    = {Music exists in almost every society, has universal acoustic features, and is processed by distinct neural circuits in humans even with no experience of musical training. However, it remains unclear how these innate characteristics emerge and what functions they serve. Here, using an artificial deep neural network that models the auditory information processing of the brain, we show that units tuned to music can spontaneously emerge by learning natural sound detection, even without learning music. The music-selective units encoded the temporal structure of music in multiple timescales, following the population-level response characteristics observed in the brain. We found that the process of generalization is critical for the emergence of music-selectivity and that music-selectivity can work as a functional basis for the generalization of natural sound, thereby elucidating its origin. These findings suggest that evolutionary adaptation to process natural sounds can provide an initial blueprint for our sense of music.},
   url         = {https://doi.org/10.1038/s41467-023-44516-0},
   bibtex_show = {true},
-  selected    = {true},
+  selected    = {false},
   stat        = {IF 15.7},
   journal     = {Nature Communications}
 }
@@ -134,7 +134,7 @@
   url         = {https://link.springer.com/article/10.1007/s11263-024-02072-0},
   journal     = {International Journal of Computer Vision},
   stat        = {IF 9.3},
-  selected    = {true},
+  selected    = {false},
   bibtex_show = {true}
 }
 
@@ -242,7 +242,7 @@
   code        = {https://github.com/kdkyum/RatchetDRL},
   url         = {https://link.aps.org/doi/10.1103/PhysRevResearch.3.L022002},
   abstract    = {A collective flashing ratchet transports Brownian particles using a spatially periodic, asymmetric, and time-dependent on-off switchable potential. The net current of the particles in this system can be substantially increased by feedback control based on the particle positions. Several feedback policies for maximizing the current have been proposed, but optimal policies have not been found for a moderate number of particles. Here, we use deep reinforcement learning (RL) to find optimal policies, with results showing that policies built with a suitable neural network architecture outperform the previous policies. Moreover, even in a time-delayed feedback situation where the on-off switching of the potential is delayed, we demonstrate that the policies provided by deep RL provide higher currents than the previous strategies.},
-  selected    = {true},
+  selected    = {false},
   bibtex_show = {true}
 }
 
