@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtitle: Physicist studying how AI systems store, retrieve, and update knowledge
+subtitle: >
+  Postdoc at <a href="https://www.mpi-sp.org">MPI-SP</a>.
+  I work on AI interpretability and <a href="https://outofcontextreasoning.com">out-of-context reasoning</a>.
 
 profile:
   align: right
@@ -19,13 +21,14 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
 canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 
-I am a postdoctoral researcher at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, where I work with [Meeyoung Cha](https://www.mpi-sp.org/cha). I earned my Ph.D. in physics at the [Korea Advanced Institute of Science and Technology (KAIST)](https://www.kaist.ac.kr/en/) under the supervision of [Hawoong Jeong](https://stat.kaist.ac.kr:2583/~hjeong/), using deep learning to study nonequilibrium statistical physics.
+I am a postdoc in the Data Science for Humanity Group at the [Max Planck Institute for Security and Privacy](https://www.mpi-sp.org) (MPI-SP) in Germany, working with [Meeyoung Cha](https://www.mpi-sp.org/cha). I study how large language models (LLMs) encode knowledge in their parameters & activations and how they decode it during inference. Topics I work on:
 
-I study the internal mechanisms of large language models: how they store, retrieve, and update knowledge, and what breaks when we try to edit or erase it. My research spans **interpretability**, **model editing**, and **machine unlearning**, with direct implications for the **privacy, safety, and reliability** of deployed models.
+- **Memory, unlearning, and editing**: localizing the parameters that hold a specific memory (an *engram*), and testing whether it can be truly erased or changed without damaging unrelated abilities, and whether the change generalizes beyond the targeted memory ([AI Engram](https://arxiv.org/abs/2606.14997), ICML 2026 Oral; [Erase or Hide?](https://arxiv.org/abs/2509.22263), ICLR 2026; [Moir](https://arxiv.org/abs/2607.20433), NeurIPS 2026)
+- **[Out-of-context reasoning](https://outofcontextreasoning.com)**: how LLMs reason without verbalizing their thoughts to infer facts their training data implies but never states. For example, why models trained on "A is B" often fail to infer "B is A" (the *reversal curse*), and which internal representations fix this ([Bilinear representation mitigates reversal curse](https://arxiv.org/abs/2509.21993), ICLR 2026)
 
-My work is often guided by principles from physics and observations from neuroscience. My training in physics taught me to look for simple mechanisms underlying complex behavior, while collaborations with neuroscientists led me to ask how biological learning and memory can inform our understanding of artificial systems.
+Previously, I did my PhD in physics at the [Korea Advanced Institute of Science and Technology](https://www.kaist.ac.kr/en/) (KAIST), where I worked with [Hawoong Jeong](https://stat.kaist.ac.kr:2583/~hjeong/) on using deep learning to study nonequilibrium statistical physics.
 
-I am currently **on the job market** and seeking research positions in academia and industry. Feel free to reach out or see my [CV](/assets/pdf/CV_DKK.pdf).
+<mark style="background-color: #fff200; color: #000;">I am currently on the job market and seeking research positions in academia and industry.</mark>
 
 <p style="position: absolute; left: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
 <!-- canary: KDKYUM-about-hidden-7f3a9b21c4d8 -->
