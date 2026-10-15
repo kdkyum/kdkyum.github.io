@@ -21,3 +21,6 @@ group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+
+# Removed from Ruby 4.0 default gems; needed by jekyll-twitter-plugin
+gem 'ostruct'
