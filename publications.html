@@ -1,22 +1,13 @@
 ---
-layout: null
-title: publications
+title: Publications
 permalink: /publications/
-nav: true
-nav_order: 1
 description: Publications by Dong-Kyum Kim, newest first.
-years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
+years: [2026, 2025, 2024, 2023, 2022, 2021, 2020] # add a year here when you publish in a new one
 ---
 <!doctype html>
 <html lang="{{ site.lang }}">
 <head>
-{% include metadata.html %}
-<link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-{% include ai-transparency-head.html %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+{% include head.html %}
 <style>
   :root {
     --bg: #FFFFFF;
@@ -81,15 +72,12 @@ years: [2026, 2025, 2024, 2023, 2022, 2021, 2020]
   {%- for y in page.years %}
   <section class="row" aria-labelledby="y{{ y }}">
     <h2 id="y{{ y }}" class="serif">{{ y }}</h2>
-    {% bibliography -f papers -q @*[year={{ y }}]* --template bib_split %}
+    {% bibliography -f papers -q @*[year={{ y }}]* --template bib %}
   </section>
   {%- endfor %}
 </main>
 
 <footer class="wrap">© 2026 Dong-Kyum Kim</footer>
 
-<!-- AI transparency canary (off-screen). See /ai-policy/. -->
-{% include ai-canary-hidden.html %}
-{% include scripts/analytics.html %}
 </body>
 </html>

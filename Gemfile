@@ -1,26 +1,14 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.4"
+
 group :jekyll_plugins do
-    gem 'jekyll'
-    gem 'jekyll-archives'
-    gem 'jekyll-diagrams'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-imagemagick'
-    gem 'jekyll-minifier'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
-    gem 'jekyll-sitemap'
-    gem 'jekyll-target-blank'
-    gem 'jekyll-twitter-plugin'
-    gem 'jemoji'
-    gem 'mini_racer'
-    gem 'unicode_utils'
-    gem 'webrick'
-end
-group :other_plugins do
-    gem 'httparty'
-    gem 'feedjira'
+  gem "jekyll-scholar", "~> 7.3" # renders _bibliography/papers.bib
+  gem "jekyll-target-blank" # opens links to other sites in a new tab
 end
 
-# Removed from Ruby 4.0 default gems; needed by jekyll-twitter-plugin
-gem 'ostruct'
+# No longer default gems on newer Rubies (3.4+), but required by Liquid and Jekyll.
+gem "bigdecimal"
+gem "logger"
+
+gem "webrick" # used by `jekyll serve`

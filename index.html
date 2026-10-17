@@ -1,20 +1,9 @@
 ---
-layout: null
-title: about
-permalink: /
-description: Postdoc at the Max Planck Institute for Security and Privacy. AI interpretability and out-of-context reasoning.
-canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
 ---
 <!doctype html>
 <html lang="{{ site.lang }}">
 <head>
-{% include metadata.html %}
-<link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-{% include ai-transparency-head.html %}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+{% include head.html %}
 <style>
   :root {
     --bg: #FFFFFF;
@@ -169,16 +158,14 @@ canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
       {%- assign news = site.news | reverse -%}
       {%- assign news_limit = site.news_limit | default: news.size -%}
       {%- for item in news limit: news_limit %}
-      <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %-d, %Y' }}</time><div>
-        {%- if item.inline -%}{{ item.content | remove: '<p>' | remove: '</p>' | strip | emojify }}{%- else -%}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{%- endif -%}
-      </div></li>
+      <li><time datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: '%b %-d, %Y' }}</time><div>{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</div></li>
       {%- endfor %}
     </ol>
   </section>
 
   <section class="row" id="publications" aria-labelledby="pubs-h">
     <h2 id="pubs-h" class="serif">Selected publications</h2>
-      {% bibliography -f papers -q @*[selected=true]* --template bib_split_selected %}
+      {% bibliography -f papers -q @*[selected=true]* --template bib-selected %}
       <p class="more"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
   </section>
 
@@ -203,8 +190,5 @@ canary_hidden: KDKYUM-about-hidden-4e2b8c9128df
   });
 </script>
 
-<!-- AI transparency canary (off-screen). See /ai-policy/. -->
-{% include ai-canary-hidden.html %}
-{% include scripts/analytics.html %}
 </body>
 </html>
