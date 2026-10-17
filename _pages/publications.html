@@ -1,0 +1,219 @@
+---
+layout: null
+title: publications
+permalink: /publications/
+nav: true
+nav_order: 1
+description: Publications by Dong-Kyum Kim, newest first.
+---
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+{% include metadata.html %}
+<link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+{% include ai-transparency-head.html %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --ink: #151515;
+    --muted: #6A6A6A;
+    --line: #E6E6E6;
+    --soft: #F5F5F4;
+    --link: #007C9C;
+    --link-hover: #005A72;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--bg); color: var(--ink); -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font-family: "Hedvig Letters Sans", "Helvetica Neue", Arial, sans-serif; font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .serif { font-family: "Hedvig Letters Serif", Georgia, serif; font-optical-sizing: auto; font-weight: 400; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  .wrap { max-width: 76rem; margin: 0 auto; padding-inline: clamp(1.25rem, 5vw, 3rem); }
+  .top { padding-top: 2rem; }
+  .home { font-size: 1.3rem; color: var(--ink); }
+  .home:hover { color: var(--link); }
+
+  .head { padding-block: clamp(3.5rem, 10vh, 6.5rem) clamp(2.5rem, 6vh, 4rem); }
+  .head h1 { margin: 0; font-size: clamp(2.75rem, 5.2vw, 4.75rem); line-height: 1; letter-spacing: -.02em; }
+  .head p { margin: 1rem 0 0; color: var(--muted); }
+
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr); gap: 1.5rem clamp(2rem, 6vw, 6rem); padding-block: clamp(2.5rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
+  .row > h2 { position: sticky; top: 1.5rem; align-self: start; margin: 0; font-size: clamp(1.75rem, 2.6vw, 2.25rem); line-height: 1.15; letter-spacing: -.01em; }
+
+  .pubs { list-style: none; margin: 0; padding: 0; }
+  .pub { padding: 0 0 1.75rem; margin-bottom: 1.75rem; border-bottom: 1px solid var(--line); }
+  .pub:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+  .pub h3 { margin: 0; font-size: 1.4rem; line-height: 1.3; letter-spacing: -.005em; }
+  .pub .authors { margin: .5rem 0 0; color: var(--muted); font-size: .975rem; }
+  .pub .authors b { color: var(--ink); font-weight: 400; text-decoration: underline; text-decoration-color: rgba(21, 21, 21, .35); text-underline-offset: .2em; }
+  .pub .line { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; margin-top: .55rem; font-size: .9375rem; }
+  .pub .venue { color: var(--ink); }
+  .pub .award { color: #A1461A; }
+
+  footer { padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9375rem; }
+
+  @media (max-width: 900px) {
+    .row { grid-template-columns: minmax(0, 1fr); }
+    .row > h2 { position: static; }
+    .head { padding-block: 2.5rem 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <a class="home serif" href="{{ '/' | relative_url }}">Dong-Kyum Kim</a>
+</header>
+
+<main class="wrap">
+  <div class="head">
+    <h1 class="serif">Publications</h1>
+    <p>Newest first. Citations are on <a href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ">Google Scholar</a>.</p>
+  </div>
+
+  <section class="row" aria-labelledby="y2026">
+    <h2 id="y2026" class="serif">2026</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Moir: Let the Model Direct Its Own Story for Robust Cross-Domain Knowledge Editing</h3>
+        <p class="authors">Jea Kwon, Jiwon Kim, <b>Dong-Kyum Kim</b>, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">NeurIPS</span><a href="https://arxiv.org/abs/2607.20433">arXiv</a><a href="https://openreview.net/forum?id=TU4Q4XqnGp">Paper</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">AI Engram: In Search of Memory Traces in Artificial Intelligence</h3>
+        <p class="authors">Jea Kwon, <b>Dong-Kyum Kim</b>, Jiwon Kim, Yonghyun Kim, Woong Kook, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">ICML</span><span class="award">Oral presentation</span><a href="https://arxiv.org/abs/2606.14997">arXiv</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Bilinear representation mitigates reversal curse and enables consistent model editing</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Minsung Kim, Jea Kwon, Nakyeong Yang, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">ICLR</span><a href="https://arxiv.org/abs/2509.21993">arXiv</a><a href="https://openreview.net/forum?id=pdNaYcApbz">Paper</a><a href="https://github.com/kdkyum/bilinear-reversal-curse">Code</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Erase or Hide? Suppressing Spurious Unlearning Neurons for Robust Unlearning</h3>
+        <p class="authors">Nakyeong Yang, <b>Dong-Kyum Kim</b>, Jea Kwon, Minsung Kim, Kyomin Jung, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">ICLR</span><a href="https://arxiv.org/abs/2509.22263">arXiv</a><a href="https://openreview.net/forum?id=z2zFk9jYpw">Paper</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">How Training Data Shapes the Use of Parametric and In-Context Knowledge in Language Models</h3>
+        <p class="authors">Minsung Kim, <b>Dong-Kyum Kim</b>, Jea Kwon, Nakyeong Yang, Kyomin Jung, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">ACL</span><a href="https://arxiv.org/abs/2510.02370">arXiv</a><a href="https://openreview.net/forum?id=KxlkI3b78h">Paper</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2025">
+    <h2 id="y2025" class="serif">2025</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Uncovering Emergent Physics Representations Learned In-Context by Large Language Models</h3>
+        <p class="authors">Yeongwoo Song, Jaeyong Bae, <b>Dong-Kyum Kim</b>, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">arXiv preprint</span><a href="https://arxiv.org/abs/2508.12448">arXiv</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">In Search of the Engram in LLMs: A Neuroscience Perspective on the Memory Functions in AI Models</h3>
+        <p class="authors">Minsung Kim, Jea Kwon, <b>Dong-Kyum Kim</b>, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">ICLR Blogpost Track</span><a href="https://d2jud02ci9yv69.cloudfront.net/2025-04-28-engram-172/blog/engram/">Post</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2024">
+    <h2 id="y2024" class="serif">2024</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Spontaneous emergence of rudimentary music detectors in deep neural networks</h3>
+        <p class="authors">Gwangsu Kim, <b>Dong-Kyum Kim</b>, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Nature Communications</span><a href="https://doi.org/10.1038/s41467-023-44516-0">Paper</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">SUBTLE: An Unsupervised Platform with Temporal Link Embedding that Maps Animal Behavior</h3>
+        <p class="authors">Jea Kwon, Sunpil Kim, <b>Dong-Kyum Kim</b>, Jinhyeong Joo, SoHyung Kim, Meeyoung Cha, and C. Justin Lee</p>
+        <div class="line"><span class="venue">International Journal of Computer Vision</span><a href="https://link.springer.com/article/10.1007/s11263-024-02072-0">Paper</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2023">
+    <h2 id="y2023" class="serif">2023</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Jea Kwon, Meeyoung Cha, and C. Justin Lee</p>
+        <div class="line"><span class="venue">NeurIPS</span><a href="https://openreview.net/forum?id=vKpVJxplmB">Paper</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Multidimensional entropic bound: Estimator of entropy production for Langevin dynamics with an arbitrary time-dependent protocol</h3>
+        <p class="authors">Sangyun Lee, <b>Dong-Kyum Kim</b>, Jong-Min Park, Won Kyu Kim, Hyunggyu Park, and Jae Sung Lee</p>
+        <div class="line"><span class="venue">Physical Review Research</span><a href="https://link.aps.org/doi/10.1103/PhysRevResearch.5.013194">Paper</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Neural Classification of Terrestrial Biomes</h3>
+        <p class="authors">Vyacheslav Shen, <b>Dong-Kyum Kim</b>, Elke Zeller, and Meeyoung Cha</p>
+        <div class="line"><span class="venue">IEEE BigComp</span><a href="https://ieeexplore.ieee.org/abstract/document/10066562">Paper</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2022">
+    <h2 id="y2022" class="serif">2022</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Transformer needs NMDA receptor nonlinearity for long-term memory</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Jea Kwon, Meeyoung Cha, and C. Justin Lee</p>
+        <div class="line"><span class="venue">NeurIPS Workshop on Memory in Artificial and Real Intelligence</span><a href="https://openreview.net/forum?id=BJtzDKdXDW">Paper</a><a href="{{ '/assets/pdf/paper_MemARI36.pdf' | relative_url }}">PDF</a><a href="https://www.youtube.com/watch?v=PQA_HuXTfes">Video</a><a href="{{ '/assets/pdf/poster_MemARI36.pdf' | relative_url }}">Poster</a><a href="https://docs.google.com/presentation/d/1pfxCzeOMFGr74PpXqaT_q2s7C-ddAAi06RRumHACuF4/edit?usp=sharing">Slides</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Estimating entropy production with odd-parity state variables via machine learning</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Sangyun Lee, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Physical Review Research</span><a href="https://link.aps.org/doi/10.1103/PhysRevResearch.4.023051">Paper</a><a href="https://github.com/kdkyum/RatchetDRL">Code</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Inferring dissipation maps from videos using convolutional neural networks</h3>
+        <p class="authors">Youngkyoung Bae, <b>Dong-Kyum Kim</b>, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Physical Review Research</span><a href="https://link.aps.org/doi/10.1103/PhysRevResearch.4.033094">Paper</a><a href="https://github.com/qodudrud/CNEEP">Code</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2021">
+    <h2 id="y2021" class="serif">2021</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Deep reinforcement learning for feedback control in a collective flashing ratchet</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b> and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Physical Review Research (Letter)</span><a href="https://link.aps.org/doi/10.1103/PhysRevResearch.3.L022002">Paper</a><a href="https://github.com/kdkyum/RatchetDRL">Code</a></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="row" aria-labelledby="y2020">
+    <h2 id="y2020" class="serif">2020</h2>
+    <ol class="pubs">
+      <li class="pub">
+        <h3 class="serif">Learning Entropy Production via Neural Networks</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Youngkyoung Bae, Sangyun Lee, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Physical Review Letters</span><a href="https://arxiv.org/abs/2003.04166">arXiv</a><a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.140604">Paper</a><a href="https://github.com/kdkyum/neep">Code</a></div>
+      </li>
+      <li class="pub">
+        <h3 class="serif">Multi-label classification of historical documents by using hierarchical attention networks</h3>
+        <p class="authors"><b>Dong-Kyum Kim</b>, Byunghwee Lee, Daniel Kim, and Hawoong Jeong</p>
+        <div class="line"><span class="venue">Journal of the Korean Physical Society</span><a href="https://link.springer.com/article/10.3938/jkps.76.368">Paper</a></div>
+      </li>
+    </ol>
+  </section>
+</main>
+
+<footer class="wrap">© 2026 Dong-Kyum Kim</footer>
+
+<!-- AI transparency canary (off-screen). See /ai-policy/. -->
+{% include ai-canary-hidden.html %}
+{% include scripts/analytics.html %}
+</body>
+</html>
