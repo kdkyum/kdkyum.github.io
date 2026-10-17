@@ -1,0 +1,39 @@
+{%- comment -%}
+  One paper in the homepage style: title, authors, venue line with links.
+  Used by _layouts/bib_split.html (publications page) and _layouts/bib_split_selected.html (homepage).
+  Pass year=true to print the year after the venue. The venue shown is the entry's `venue` field if set,
+  otherwise the journal (for articles) or `abbr`.
+{%- endcomment -%}
+{%- if entry.venue -%}
+  {%- assign venue = entry.venue -%}
+{%- elsif entry.type == "article" and entry.journal -%}
+  {%- if entry.journal contains "arXiv" -%}{%- assign venue = "arXiv preprint" -%}{%- else -%}{%- assign venue = entry.journal -%}{%- endif -%}
+{%- else -%}
+  {%- assign venue = entry.abbr | default: entry.booktitle -%}
+{%- endif -%}
+<h3 class="serif">{{ entry.title }}</h3>
+<p class="authors">
+{%- assign author_count = entry.author_array | size -%}
+{%- for author in entry.author_array -%}
+  {%- assign last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "†" | remove: "^" -%}
+  {%- assign is_self = false -%}
+  {%- if site.scholar.last_name contains last_name and site.scholar.first_name contains author.first -%}{%- assign is_self = true -%}{%- endif -%}
+  {%- unless forloop.first -%}{%- if author_count == 2 %} and {% elsif forloop.last %}, and {% else %}, {% endif -%}{%- endunless -%}
+  {%- if is_self -%}<b>{{ author.first }} {{ author.last }}</b>{%- else -%}{{ author.first }} {{ author.last }}{%- endif -%}
+{%- endfor -%}
+</p>
+<div class="line">
+  <span class="venue">{{ venue }}{% if include.year %} {{ entry.year }}{% endif %}</span>
+  {%- if entry.award %}<span class="award">{{ entry.award }}</span>{% endif %}
+  {%- if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>{% endif %}
+  {%- if entry.url %}<a href="{{ entry.url }}">Paper</a>{% endif %}
+  {%- if entry.pdf %}<a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}">PDF</a>{% endif %}
+  {%- if entry.supp %}<a href="{% if entry.supp contains '://' %}{{ entry.supp }}{% else %}{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}{% endif %}">Supp</a>{% endif %}
+  {%- if entry.code %}<a href="{{ entry.code }}">Code</a>{% endif %}
+  {%- if entry.video %}<a href="{{ entry.video }}">Video</a>{% endif %}
+  {%- if entry.poster %}<a href="{% if entry.poster contains '://' %}{{ entry.poster }}{% else %}{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}{% endif %}">Poster</a>{% endif %}
+  {%- if entry.slides %}<a href="{% if entry.slides contains '://' %}{{ entry.slides }}{% else %}{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}{% endif %}">Slides</a>{% endif %}
+  {%- if entry.website %}<a href="{{ entry.website }}">Website</a>{% endif %}
+  {%- if entry.blog %}<a href="{{ entry.blog }}">Blog</a>{% endif %}
+  {%- if entry.tweet %}<a href="{{ entry.tweet }}">Tweet</a>{% endif %}
+</div>

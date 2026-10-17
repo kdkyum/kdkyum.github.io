@@ -1,0 +1,11 @@
+---
+---
+{%- comment -%}
+  A selected paper on the homepage (_pages/about.html): figure in the left column, text in the right.
+  The figure comes from the entry's `preview` field, a path under assets/img/ (e.g. preview = {papers/ai-engram.png}).
+{%- endcomment -%}
+{%- if entry.url -%}{%- assign figure_link = entry.url -%}{%- elsif entry.arxiv -%}{%- assign figure_link = entry.arxiv | prepend: "https://arxiv.org/abs/" -%}{%- endif -%}
+{%- if entry.preview -%}
+<a class="fig" href="{{ figure_link }}" tabindex="-1" aria-hidden="true"><img src="{{ entry.preview | prepend: '/assets/img/' | relative_url }}" alt="" loading="lazy"></a>
+{%- endif %}
+<div class="txt">{% include split/pub.html year=true %}</div>
