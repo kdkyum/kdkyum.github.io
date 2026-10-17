@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dong-Kyum Kim</title>
+<meta name="author" content="Dong-Kyum Kim">
+<meta name="description" content="Postdoc at the Max Planck Institute for Security and Privacy. AI interpretability and out-of-context reasoning.">
+<link rel="icon" href="/assets/img/web-logo.png">
+<link rel="canonical" href="https://kdkyum.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKFWVE1P93"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-RKFWVE1P93');
+</script>
+
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --ink: #151515;
+    --muted: #6A6A6A;
+    --line: #E6E6E6;
+    --soft: #F5F5F4;
+    --link: #007C9C;
+    --link-hover: #005A72;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--bg); color: var(--ink); -webkit-text-size-adjust: 100%; }
+  body { margin: 0; font-family: "Hedvig Letters Sans", "Helvetica Neue", Arial, sans-serif; font-size: 1.0625rem; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .serif { font-family: "Hedvig Letters Serif", Georgia, serif; font-optical-sizing: auto; font-weight: 400; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+  /* ---------- hero: circle photo left, text right ---------- */
+  .hero {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+    gap: 2rem clamp(2rem, 6vw, 6rem); align-items: center;
+    padding-block: clamp(4rem, 13vh, 8.5rem) clamp(3.5rem, 9vh, 6rem);
+  }
+  .avatar {
+    display: block; width: min(100%, 15rem); height: auto; aspect-ratio: 1; object-fit: cover;
+    border-radius: 50%; box-shadow: 0 0 0 1px rgba(21, 21, 21, .08);
+  }
+  .hero-body { max-width: 40rem; }
+  .hero h1 { margin: 0; font-size: clamp(2.75rem, 5.2vw, 4.75rem); line-height: 1; letter-spacing: -.02em; }
+  .hero .role { margin: 1.1rem 0 0; font-size: 1.125rem; line-height: 1.5; color: var(--muted); }
+  .hero .intro { margin: 1.35rem 0 0; font-size: 1.3rem; line-height: 1.5; }
+  .hero .avail { display: flex; gap: .65rem; align-items: baseline; margin: 1.35rem 0 0; font-size: 1rem; }
+  .hero .avail::before { content: ""; flex: none; width: .55rem; height: .55rem; border-radius: 50%; background: #2F9E62; transform: translateY(-.05em); }
+  .buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.9rem; }
+  .btn { display: inline-flex; align-items: center; padding: .8rem 1.35rem; border: 1px solid var(--ink); border-radius: 2px; color: var(--ink); font-size: .975rem; }
+  .btn:hover { color: var(--ink); }
+  .btn.solid, .btn.solid:hover { background: var(--ink); color: #FFFFFF; }
+  .btn.solid:hover { background: #000; }
+  .btn:not(.solid):hover { background: var(--soft); }
+  .social { display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; margin-top: 1.6rem; font-size: .9375rem; color: var(--muted); }
+
+  /* ---------- sections ---------- */
+  .wrap { max-width: 76rem; margin: 0 auto; padding-inline: clamp(1.25rem, 5vw, 3rem); }
+  .row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr); gap: 1.5rem clamp(2rem, 6vw, 6rem); padding-block: clamp(3.5rem, 7vw, 5.5rem); border-top: 1px solid var(--line); }
+  .row > h2 { margin: 0; font-size: clamp(1.75rem, 2.6vw, 2.25rem); line-height: 1.15; letter-spacing: -.01em; }
+  .row p { margin: 0 0 1rem; }
+  .row .big { font-size: 1.3rem; line-height: 1.55; }
+  .topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2.5rem; margin: 2rem 0 1.5rem; }
+  .topics h3 { margin: 0 0 .5rem; font-size: 1.35rem; line-height: 1.25; }
+  .topics p { margin: 0; color: #3A3A3A; }
+  .muted { color: var(--muted); }
+
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+  .news li:first-child { padding-top: 0; }
+  .news time { color: var(--muted); font-size: .9375rem; padding-top: .1rem; }
+
+  .bibliography { list-style: none; margin: 0; padding: 0; }
+  .bibliography h3 { margin: 0; font-size: 1.4rem; line-height: 1.3; letter-spacing: -.005em; }
+  .bibliography .authors { margin: .5rem 0 0; color: var(--muted); font-size: .975rem; }
+  .bibliography .authors b { color: var(--ink); font-weight: 400; text-decoration: underline; text-decoration-color: rgba(21, 21, 21, .35); text-underline-offset: .2em; }
+  .bibliography .line { display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; margin-top: .55rem; font-size: .9375rem; }
+  .bibliography .venue { color: var(--ink); }
+  .bibliography .award { color: #A1461A; }
+  /* selected papers: each paper is a row of the split, figure on the left, text on the right */
+  #publications .bibliography { grid-column: 1 / -1; }
+  #publications .bibliography > li {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+    column-gap: clamp(2rem, 6vw, 6rem); align-items: start;
+    padding: 1.9rem 0; border-top: 1px solid var(--line);
+  }
+  #publications .bibliography > li:first-child { border-top: 0; padding-top: .25rem; }
+  #publications .txt { grid-column: 2; }
+  .fig { display: block; padding: .6rem; background: #FFFFFF; border: 1px solid var(--line); }
+  a.fig:hover { border-color: #BDBDBD; }
+  .fig img { display: block; width: 100%; height: auto; }
+  #publications .more { grid-column: 2; margin: 0 !important; }
+  .more { margin-top: 2rem !important; }
+
+  .email { margin: 0; font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.15; overflow-wrap: anywhere; }
+  .copy { appearance: none; margin-top: 1.25rem; background: none; border: 1px solid var(--ink); border-radius: 2px; padding: .6rem 1.1rem; font: inherit; font-size: .9375rem; color: var(--ink); cursor: pointer; }
+  .copy:hover { background: var(--soft); }
+  footer { padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9375rem; }
+
+  @media (max-width: 900px) {
+    /* phones: photo centered above the name, hero text centered with it */
+    .hero { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-block: 2.25rem 3rem; justify-items: center; text-align: center; }
+    .avatar { width: 9.5rem; }
+    .buttons, .social { justify-content: center; }
+    .buttons { gap: .5rem; }
+    .btn { padding: .7rem .75rem; font-size: .9375rem; }
+    .hero .avail { display: block; }
+    .hero .avail::before { display: inline-block; margin-right: .55rem; vertical-align: .08em; transform: none; }
+    .row { grid-template-columns: minmax(0, 1fr); }
+    .topics { grid-template-columns: minmax(0, 1fr); }
+    .news li { grid-template-columns: minmax(0, 1fr); gap: .2rem; }
+    #publications .bibliography > li { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
+    #publications .txt { grid-column: 1; }
+    .fig { max-width: 30rem; }
+    #publications .more { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="hero">
+    <img class="avatar" src="/assets/img/prof_pic_circle.jpg" alt="Portrait of Dong-Kyum Kim" width="460" height="460">
+    <div class="hero-body">
+      <h1 class="serif">Dong-Kyum Kim</h1>
+      <p class="role">Postdoc at the Max Planck Institute for Security and Privacy</p>
+      <p class="intro">I work on AI interpretability and <a href="https://outofcontextreasoning.com" target="_blank" rel="noopener noreferrer">out-of-context reasoning</a>.</p>
+      <p class="avail">On the job market for research positions in academia and industry</p>
+      <div class="buttons">
+        <a class="btn solid" href="/assets/pdf/CV_DKK.pdf">Download CV</a>
+        <a class="btn" href="/publications/">Publications</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+      <div class="social">
+        <a href="https://scholar.google.com/citations?user=-pvD9xUAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/kdkyum" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/kdkyum531" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.linkedin.com/in/kdkyum/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="row" id="research" aria-labelledby="research-h">
+    <h2 id="research-h" class="serif">Research</h2>
+    <div>
+      <p class="big">I am a postdoc in the Data Science for Humanity Group at the <a href="https://www.mpi-sp.org" target="_blank" rel="noopener noreferrer">Max Planck Institute for Security and Privacy</a> in Germany, working with <a href="https://www.mpi-sp.org/cha" target="_blank" rel="noopener noreferrer">Meeyoung Cha</a>. I study how large language models encode knowledge in their parameters and activations, and how they decode it during inference.</p>
+      <div class="topics">
+        <div>
+          <h3 class="serif">Memory, unlearning, and editing</h3>
+          <p>Localizing the parameters that hold a specific memory, and testing whether it can be truly erased or changed without damaging unrelated abilities, and whether the change generalizes beyond the targeted memory. (<a href="https://arxiv.org/abs/2606.14997" target="_blank" rel="noopener noreferrer">AI Engram</a>, ICML 2026 Oral; <a href="https://arxiv.org/abs/2509.22263" target="_blank" rel="noopener noreferrer">Erase or Hide?</a>, ICLR 2026; <a href="https://arxiv.org/abs/2607.20433" target="_blank" rel="noopener noreferrer">Moir</a>, NeurIPS 2026)</p>
+        </div>
+        <div>
+          <h3 class="serif">Out-of-context reasoning</h3>
+          <p>How models infer facts their training data implies but never states, without verbalizing their thoughts. For example, why models trained on “A is B” often fail to infer “B is A”, and which internal representations fix this. (<a href="https://arxiv.org/abs/2509.21993" target="_blank" rel="noopener noreferrer">Bilinear representation mitigates reversal curse</a>, ICLR 2026)</p>
+        </div>
+      </div>
+      <p class="muted">Previously, I did my PhD in physics at <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener noreferrer">KAIST</a>, advised by Prof. <a href="https://stat.kaist.ac.kr:2583/~hjeong/" target="_blank" rel="noopener noreferrer">Hawoong Jeong</a> at the <a href="https://stat.kaist.ac.kr:2583" target="_blank" rel="noopener noreferrer">Complex Systems and Statistical Physics Lab</a>, using deep learning to study nonequilibrium statistical physics.</p>
+    </div>
+  </section>
+
+  <section class="row" id="news" aria-labelledby="news-h">
+    <h2 id="news-h" class="serif">News</h2>
+    <ol class="news">
+      <li>
+<time datetime="2026-09-30">Sep 30, 2026</time><div>
+<a href="https://arxiv.org/abs/2607.20433" target="_blank" rel="noopener noreferrer"><em>Moir</em></a>, on preserving reasoning under knowledge editing by estimating the preservation covariance from the model’s own samples, was accepted at <strong>NeurIPS 2026</strong>.</div>
+</li>
+      <li>
+<time datetime="2026-07-24">Jul 24, 2026</time><div>Presented <a href="https://docs.google.com/presentation/d/1WdZvexF7HmzqnJbV-Xiu-dhJM0EwJcDLm17H_DoYrzE/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><em>AI research using agents and notebooks</em></a> as one of five speakers at <strong>Spark(l)ing Science, MPI-SP</strong>, in the session <em>AI Agents, Show and Tell: Real Workflows, Real Speedups</em>.</div>
+</li>
+      <li>
+<time datetime="2026-05-24">May 24, 2026</time><div>
+<a href="https://arxiv.org/abs/2606.14997" target="_blank" rel="noopener noreferrer"><em>AI Engram</em></a>, on identifying memory traces in neural networks, was selected for an <strong>Oral</strong> at <strong>ICML 2026</strong> (168 orals, top 0.7% of submissions).</div>
+</li>
+      <li>
+<time datetime="2026-05-13">May 13, 2026</time><div>Recognized as a <strong>Gold Reviewer</strong> for <strong>ICML 2026</strong>, placing among the conference’s top reviewers.</div>
+</li>
+    </ol>
+  </section>
+
+  <section class="row" id="publications" aria-labelledby="pubs-h">
+    <h2 id="pubs-h" class="serif">Selected publications</h2>
+      <ol class="bibliography">
+<li>
+<a class="fig" href="https://arxiv.org/abs/2606.14997" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="/assets/img/papers/ai-engram.png" alt="" loading="lazy"></a>
+<div class="txt">
+<h3 class="serif">AI Engram: In Search of Memory Traces in Artificial Intelligence</h3>
+<p class="authors">Jea Kwon, <b>Dong-Kyum Kim</b>, Jiwon Kim, Yonghyun Kim, Woong Kook, and Meeyoung Cha</p>
+<div class="line">
+  <span class="venue">ICML 2026</span><span class="award">Oral</span><a href="https://arxiv.org/abs/2606.14997" target="_blank" rel="noopener noreferrer">arXiv</a>
+</div>
+</div>
+</li>
+<li>
+<a class="fig" href="https://openreview.net/forum?id=pdNaYcApbz" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="/assets/img/papers/bilinear.png" alt="" loading="lazy"></a>
+<div class="txt">
+<h3 class="serif">Bilinear representation mitigates reversal curse and enables consistent model editing</h3>
+<p class="authors"><b>Dong-Kyum Kim</b>, Minsung Kim, Jea Kwon, Nakyeong Yang, and Meeyoung Cha</p>
+<div class="line">
+  <span class="venue">ICLR 2026</span><a href="https://arxiv.org/abs/2509.21993" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://openreview.net/forum?id=pdNaYcApbz" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/kdkyum/bilinear-reversal-curse" target="_blank" rel="noopener noreferrer">Code</a><a href="https://x.com/kdkyum531/status/2047645979956978075" target="_blank" rel="noopener noreferrer">Tweet</a>
+</div>
+</div>
+</li>
+<li>
+<a class="fig" href="https://openreview.net/forum?id=z2zFk9jYpw" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="/assets/img/papers/erase-or-hide.png" alt="" loading="lazy"></a>
+<div class="txt">
+<h3 class="serif">Erase or Hide? Suppressing Spurious Unlearning Neurons for Robust Unlearning</h3>
+<p class="authors">Nakyeong Yang, <b>Dong-Kyum Kim</b>, Jea Kwon, Minsung Kim, Kyomin Jung, and Meeyoung Cha</p>
+<div class="line">
+  <span class="venue">ICLR 2026</span><a href="https://arxiv.org/abs/2509.22263" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://openreview.net/forum?id=z2zFk9jYpw" target="_blank" rel="noopener noreferrer">Paper</a>
+</div>
+</div>
+</li>
+<li>
+<a class="fig" href="https://openreview.net/forum?id=vKpVJxplmB" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="/assets/img/papers/nmdar-transformer.png" alt="" loading="lazy"></a>
+<div class="txt">
+<h3 class="serif">Transformer as a hippocampal memory consolidation model based on NMDAR-inspired nonlinearity</h3>
+<p class="authors"><b>Dong-Kyum Kim</b>, Jea Kwon, Meeyoung Cha, and C. Justin Lee</p>
+<div class="line">
+  <span class="venue">NeurIPS 2023</span><a href="https://openreview.net/forum?id=vKpVJxplmB" target="_blank" rel="noopener noreferrer">Paper</a>
+</div>
+</div>
+</li>
+<li>
+<a class="fig" href="https://link.aps.org/doi/10.1103/PhysRevLett.125.140604" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="/assets/img/papers/neep.png" alt="" loading="lazy"></a>
+<div class="txt">
+<h3 class="serif">Learning Entropy Production via Neural Networks</h3>
+<p class="authors"><b>Dong-Kyum Kim</b>, Youngkyoung Bae, Sangyun Lee, and Hawoong Jeong</p>
+<div class="line">
+  <span class="venue">Physical Review Letters 2020</span><a href="https://arxiv.org/abs/2003.04166" target="_blank" rel="noopener noreferrer">arXiv</a><a href="https://link.aps.org/doi/10.1103/PhysRevLett.125.140604" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/kdkyum/neep" target="_blank" rel="noopener noreferrer">Code</a>
+</div>
+</div>
+</li>
+</ol>
+      <p class="more"><a href="/publications/">All publications</a></p>
+  </section>
+
+  <section class="row" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="serif">Contact</h2>
+    <div>
+      <p class="email serif">dong-kyum.kim [at] mpi-sp.org</p>
+      <button class="copy" type="button" data-user="dong-kyum.kim" data-domain="mpi-sp.org">Copy email address</button>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">© 2026 Dong-Kyum Kim</footer>
+
+<script>
+  const copy = document.querySelector('.copy');
+  copy.addEventListener('click', async () => {
+    const addr = `${copy.dataset.user}@${copy.dataset.domain}`;
+    try { await navigator.clipboard.writeText(addr); copy.textContent = 'Copied'; }
+    catch { copy.textContent = addr; }
+    setTimeout(() => { copy.textContent = 'Copy email address'; }, 2000);
+  });
+</script>
+
+</body>
+</html>
