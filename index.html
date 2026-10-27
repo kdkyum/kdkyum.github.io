@@ -90,6 +90,7 @@
   .copy { appearance: none; margin-top: 1.25rem; background: none; border: 1px solid var(--ink); border-radius: 2px; padding: .6rem 1.1rem; font: inherit; font-size: .9375rem; color: var(--ink); cursor: pointer; }
   .copy:hover { background: var(--soft); }
   footer { padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9375rem; }
+  footer p { margin: 0; }
 
   @media (max-width: 900px) {
     /* phones: photo centered above the name, hero text centered with it */
@@ -181,7 +182,7 @@
   </section>
 </main>
 
-<footer class="wrap">© 2026 Dong-Kyum Kim</footer>
+{% include footer.html %}
 
 <script>
   const copy = document.querySelector('.copy');
